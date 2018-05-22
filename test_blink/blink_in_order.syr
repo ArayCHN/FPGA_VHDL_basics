@@ -1,0 +1,410 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: blink_in_order.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "blink_in_order.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "blink_in_order"
+Output Format                      : NGC
+Target Device                      : xc6slx4-2-tqg144
+
+---- Source Options
+Top Module Name                    : blink_in_order
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "\\vmware-host\shared folders\WangRui\Programming\FPGA\test_blink\test_blink.vhd" into library work
+Parsing entity <blink_in_order>.
+Parsing architecture <rtl> of entity <blink_in_order>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <blink_in_order> (architecture <rtl>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <blink_in_order>.
+    Related source file is "\\vmware-host\shared folders\WangRui\Programming\FPGA\test_blink\test_blink.vhd".
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 31-bit register for signal <clk_count>.
+    Found 1-bit register for signal <led_state>.
+    Found 1-bit register for signal <output_led>.
+    Found 1-bit register for signal <clk_1Hz>.
+    Found 31-bit adder for signal <clk_count[30]_GND_4_o_add_1_OUT> created at line 61.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  34 D-type flip-flop(s).
+Unit <blink_in_order> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 31-bit adder                                          : 1
+# Registers                                            : 4
+ 1-bit register                                        : 3
+ 31-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <blink_in_order>.
+The following registers are absorbed into counter <clk_count>: 1 register on signal <clk_count>.
+Unit <blink_in_order> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 31-bit up counter                                     : 1
+# Registers                                            : 3
+ Flip-Flops                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <blink_in_order> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block blink_in_order, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 34
+ Flip-Flops                                            : 34
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : blink_in_order.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 135
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 30
+#      LUT2                        : 31
+#      LUT3                        : 1
+#      LUT6                        : 8
+#      MUXCY                       : 30
+#      VCC                         : 1
+#      XORCY                       : 31
+# FlipFlops/Latches                : 34
+#      FD                          : 34
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 2
+#      OBUF                        : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx4tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              34  out of   4800     0%  
+ Number of Slice LUTs:                   72  out of   2400     3%  
+    Number used as Logic:                72  out of   2400     3%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     73
+   Number with an unused Flip Flop:      39  out of     73    53%  
+   Number with an unused LUT:             1  out of     73     1%  
+   Number of fully used LUT-FF pairs:    33  out of     73    45%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                           4
+ Number of bonded IOBs:                   3  out of    102     2%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_1Hz                            | NONE(led_state)        | 2     |
+clk                                | BUFGP                  | 32    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.920ns (Maximum Frequency: 203.252MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.277ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_1Hz'
+  Clock period: 2.260ns (frequency: 442.478MHz)
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               2.260ns (Levels of Logic = 1)
+  Source:            led_state (FF)
+  Destination:       led_state (FF)
+  Source Clock:      clk_1Hz rising
+  Destination Clock: clk_1Hz rising
+
+  Data Path: led_state to led_state
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   0.725  led_state (led_state)
+     INV:I->O              1   0.255   0.681  led_state_INV_3_o1_INV_0 (led_state_INV_3_o)
+     FD:D                      0.074          led_state
+    ----------------------------------------
+    Total                      2.260ns (0.854ns logic, 1.406ns route)
+                                       (37.8% logic, 62.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.920ns (frequency: 203.252MHz)
+  Total number of paths / destination ports: 1490 / 32
+-------------------------------------------------------------------------
+Delay:               4.920ns (Levels of Logic = 3)
+  Source:            clk_count_25 (FF)
+  Destination:       clk_count_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: clk_count_25 to clk_count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   1.181  clk_count_25 (clk_count_25)
+     LUT6:I0->O            3   0.254   1.196  GND_4_o_clk_count[30]_equal_1_o<30>5 (GND_4_o_clk_count[30]_equal_1_o<30>4)
+     LUT6:I1->O           16   0.254   1.182  GND_4_o_clk_count[30]_equal_1_o<30>6 (GND_4_o_clk_count[30]_equal_1_o)
+     LUT2:I1->O            1   0.254   0.000  clk_count_0_rstpot (clk_count_0_rstpot)
+     FD:D                      0.074          clk_count_0
+    ----------------------------------------
+    Total                      4.920ns (1.361ns logic, 3.559ns route)
+                                       (27.7% logic, 72.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_1Hz'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            output_led (FF)
+  Destination:       output_led (PAD)
+  Source Clock:      clk_1Hz rising
+
+  Data Path: output_led to output_led
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.525   0.681  output_led (output_led_OBUF)
+     OBUF:I->O                 2.912          output_led_OBUF (output_led)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.277ns (Levels of Logic = 1)
+  Source:            clk_1Hz (FF)
+  Destination:       output_clock_1hz (PAD)
+  Source Clock:      clk rising
+
+  Data Path: clk_1Hz to output_clock_1hz
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               5   0.525   0.840  clk_1Hz (clk_1Hz)
+     OBUF:I->O                 2.912          output_clock_1hz_OBUF (output_clock_1hz)
+    ----------------------------------------
+    Total                      4.277ns (3.437ns logic, 0.840ns route)
+                                       (80.4% logic, 19.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.920|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_1Hz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_1Hz        |    2.260|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.68 secs
+ 
+--> 
+
+Total memory usage is 258888 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

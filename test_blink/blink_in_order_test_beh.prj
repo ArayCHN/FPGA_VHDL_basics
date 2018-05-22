@@ -1,0 +1,2 @@
+vhdl work "test_blink.vhd"
+vhdl work "blink_in_order_test.vhd"

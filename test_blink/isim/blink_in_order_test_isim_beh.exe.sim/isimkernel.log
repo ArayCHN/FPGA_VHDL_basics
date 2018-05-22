@@ -1,0 +1,28 @@
+Command line:
+   blink_in_order_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49813
+
+Tue May 22 14:10:46 2018
+
+
+ Elaboration Time: 0.093601 sec
+
+ Current Memory Usage: 669.729 Meg
+
+ Total Signals          : 12
+ Total Nets             : 8
+ Total Signal Drivers   : 7
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 5
+ Total Traceable Variables  : 15
+ Total Scalar Nets and Variables : 493
+
+ Total Simulation Time: 0.140401 sec
+
+ Current Memory Usage: 827.015 Meg
+
+Tue May 22 14:11:16 2018
+

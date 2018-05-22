@@ -1,0 +1,2 @@
+vhdl isim_temp "test_blink.vhd"
+vhdl isim_temp "blink_in_order_test.vhd"

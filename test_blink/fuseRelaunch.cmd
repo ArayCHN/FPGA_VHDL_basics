@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order_test_isim_beh.exe" -prj "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order_test_beh.prj" "work.blink_in_order_test" 

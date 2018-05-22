@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "Z:/WangRui/Programming/FPGA/test_blink/test_blink.xst" -ofn "Z:/WangRui/Programming/FPGA/test_blink/test_blink.syr" 
+xst -intstyle ise -ifn "Z:/WangRui/Programming/FPGA/test_blink/test_blink.xst" -ofn "Z:/WangRui/Programming/FPGA/test_blink/test_blink.syr" 
+xst -intstyle ise -ifn "Z:/WangRui/Programming/FPGA/test_blink/test_blink.xst" -ofn "Z:/WangRui/Programming/FPGA/test_blink/test_blink.syr" 
+xst -intstyle ise -ifn "Z:/WangRui/Programming/FPGA/test_blink/test_blink.xst" -ofn "Z:/WangRui/Programming/FPGA/test_blink/test_blink.syr" 

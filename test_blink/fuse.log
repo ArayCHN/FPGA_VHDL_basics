@@ -1,0 +1,19 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o Z:/WangRui/Programming/FPGA/test_blink/blink_in_order_test_isim_beh.exe -prj Z:/WangRui/Programming/FPGA/test_blink/blink_in_order_test_beh.prj work.blink_in_order_test 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "Z:/WangRui/Programming/FPGA/test_blink/test_blink.vhd" into library work
+Parsing VHDL file "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order_test.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture rtl of entity blink_in_order [blink_in_order_default]
+Compiling architecture behavior of entity blink_in_order_test
+Time Resolution for simulation is 1ps.
+Compiled 6 VHDL Units
+Built simulation executable Z:/WangRui/Programming/FPGA/test_blink/blink_in_order_test_isim_beh.exe
+Fuse Memory Usage: 34688 KB
+Fuse CPU Usage: 732 ms
