@@ -9,3 +9,4 @@ xst -intstyle ise -ifn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.xs
 xst -intstyle ise -ifn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.xst" -ofn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.syr" 
 xst -intstyle ise -ifn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.xst" -ofn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.syr" 
 xst -intstyle ise -ifn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.xst" -ofn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.syr" 
+xst -intstyle ise -ifn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.xst" -ofn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.syr" 

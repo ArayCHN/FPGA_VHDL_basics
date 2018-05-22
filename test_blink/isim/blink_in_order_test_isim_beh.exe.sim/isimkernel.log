@@ -2,9 +2,9 @@ Command line:
    blink_in_order_test_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  49813
+     -socket  49829
 
-Tue May 22 14:10:46 2018
+Tue May 22 14:43:27 2018
 
 
  Elaboration Time: 0.093601 sec
@@ -20,9 +20,9 @@ Tue May 22 14:10:46 2018
  Total Traceable Variables  : 15
  Total Scalar Nets and Variables : 493
 
- Total Simulation Time: 0.140401 sec
+ Total Simulation Time: 6.06844 sec
 
- Current Memory Usage: 827.015 Meg
+ Current Memory Usage: 984.302 Meg
 
-Tue May 22 14:11:16 2018
+Tue May 22 14:44:35 2018
 

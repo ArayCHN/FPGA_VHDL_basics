@@ -67,13 +67,9 @@
     <transform xil_pn:end_ts="1526957450" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1526957450">
       <status xil_pn:value="SuccessfullyRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526967955" xil_pn:in_ck="3892209655642820943" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1526967955">
+    <transform xil_pn:end_ts="1526970814" xil_pn:in_ck="3892209655642820943" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1526970813">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="blink_in_order_test.vhd"/>
       <outfile xil_pn:name="test_blink.vhd"/>
     </transform>
@@ -89,24 +85,16 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526967959" xil_pn:in_ck="3892209655642820943" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1526967959">
+    <transform xil_pn:end_ts="1526970818" xil_pn:in_ck="3892209655642820943" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1526970818">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="blink_in_order_test.vhd"/>
       <outfile xil_pn:name="test_blink.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1526967964" xil_pn:in_ck="3892209655642820943" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1590956542168192854" xil_pn:start_ts="1526967959">
+    <transform xil_pn:end_ts="1526970822" xil_pn:in_ck="3892209655642820943" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1590956542168192854" xil_pn:start_ts="1526970818">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="blink_in_order_test_beh.prj"/>
       <outfile xil_pn:name="blink_in_order_test_isim_beh.exe"/>
@@ -115,10 +103,9 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1526967964" xil_pn:in_ck="7349304506260838223" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7838770956261267975" xil_pn:start_ts="1526967964">
+    <transform xil_pn:end_ts="1526970822" xil_pn:in_ck="7349304506260838223" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7838770956261267975" xil_pn:start_ts="1526970822">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="blink_in_order_test_isim_beh.wdb"/>
@@ -152,7 +139,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526968887" xil_pn:in_ck="-7908428917060880161" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="3083586673544137754" xil_pn:start_ts="1526968878">
+    <transform xil_pn:end_ts="1526970931" xil_pn:in_ck="-7908428917060880161" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="3083586673544137754" xil_pn:start_ts="1526970921">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>

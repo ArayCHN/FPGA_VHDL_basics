@@ -8,3 +8,5 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
+# run all
+Stopped at time : 228170125 ns : File "//vmware-host/Shared Folders/WangRui/Programming/FPGA/test_blink/test_blink.vhd" Line 78

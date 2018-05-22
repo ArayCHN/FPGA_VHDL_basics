@@ -15,5 +15,5 @@ Compiling architecture behavior of entity blink_in_order_test
 Time Resolution for simulation is 1ps.
 Compiled 6 VHDL Units
 Built simulation executable Z:/WangRui/Programming/FPGA/test_blink/blink_in_order_test_isim_beh.exe
-Fuse Memory Usage: 34688 KB
-Fuse CPU Usage: 732 ms
+Fuse Memory Usage: 34652 KB
+Fuse CPU Usage: 748 ms

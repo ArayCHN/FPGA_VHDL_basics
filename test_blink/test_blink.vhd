@@ -52,24 +52,32 @@ begin
     -- constant clk_frequency : natural := 20000000;
 	 -- signal count: natural; -- the counter for clock prescale
   begin
-    if (clk'event and clk = '1') then
-      --clk_count <= clk_count + 1;
-      if (clk_count = clk_frequency / 2 - 1) then
-        clk_1Hz <= not clk_1Hz;
-        clk_count <= 0;
-		else
-		  clk_count <= clk_count + 1;
+    if reset = '1' then
+	   clk_count <= 0;
+		clk_1Hz <= '0';
+	 else
+      if (rising_edge(clk)) then
+        if (clk_count = clk_frequency / 2 - 1) then
+          clk_1Hz <= not clk_1Hz;
+          clk_count <= 0;
+		  else
+		    clk_count <= clk_count + 1;
+        end if;
       end if;
-    end if;
+	 end if;
   end process clk_1_hz_generator;
   
   output_clock_1hz <= clk_1Hz; -- debug, show in simulator
   
   LED_blink: process(clk_1Hz) is
   begin
-    if (clk_1Hz'event and clk_1Hz = '1') then -- reached rising edge of 1Hz clock
-      led_state <= not led_state; -- 0.5Hz LED
-		output_led <= led_state; --led_state;
+    if reset = '1' then
+	   led_state <= '0';
+	 else
+      if (rising_edge(clk_1Hz)) then -- reached rising edge of 1Hz clock
+        led_state <= not led_state; -- 0.5Hz LED
+	   end if;
 	 end if;
+	 output_led <= led_state; --led_state;
   end process LED_blink;
 end rtl;
