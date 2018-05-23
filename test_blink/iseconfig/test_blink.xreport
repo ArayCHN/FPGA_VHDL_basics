@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-05-22T14:35:19</DateModified>
+  <DateModified>2018-05-22T14:55:03</DateModified>
   <ModuleName>blink_in_order</ModuleName>
-  <SummaryTimeStamp>2018-05-22T14:01:33</SummaryTimeStamp>
+  <SummaryTimeStamp>2018-05-22T14:35:39</SummaryTimeStamp>
   <SavedFilePath>Z:/WangRui/Programming/FPGA/test_blink/iseconfig/test_blink.xreport</SavedFilePath>
   <ImplementationReportsDirectory>Z:/WangRui/Programming/FPGA/test_blink</ImplementationReportsDirectory>
   <DateInitialized>2018-05-22T10:42:25</DateInitialized>

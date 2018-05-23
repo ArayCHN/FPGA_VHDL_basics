@@ -31,16 +31,16 @@ use ieee.numeric_std.all;
 --use UNISIM.VComponents.all;
 
 -- clock is 20MHz!
-entity blink_in_order is
+entity pwm is
   port(
     reset: in std_logic;
 	 clk: in std_logic;
 	 output_led: out std_logic := '0'; -- there can not be a semicolon here!!!
 	 output_clock_1hz: out std_logic --debug
   );
-end blink_in_order;
+end pwm;
 
-architecture rtl of blink_in_order is
+architecture behavioral of pwm is
   signal counter: natural range 0 to 8 := 0; -- 9 LEDs in total
   signal clk_1Hz: std_logic:= '0';
   signal led_state: std_logic := '0';
@@ -74,10 +74,10 @@ begin
     if reset = '1' then
 	   led_state <= '0';
 	 else
-      if (clk_1Hz'event and clk_1Hz = '1') then -- reached rising edge of 1Hz clock
+      if (rising_edge(clk_1Hz)) then -- reached rising edge of 1Hz clock
         led_state <= not led_state; -- 0.5Hz LED
 	   end if;
 	 end if;
 	 output_led <= led_state; --led_state;
   end process LED_blink;
-end rtl;
+end behavioral;

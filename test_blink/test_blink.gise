@@ -66,12 +66,17 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1526957450" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1526957450">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526970814" xil_pn:in_ck="3892209655642820943" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1526970813">
+    <transform xil_pn:end_ts="1526971394" xil_pn:in_ck="3892209655642820943" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1526971394">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="blink_in_order_test.vhd"/>
-      <outfile xil_pn:name="test_blink.vhd"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1526958823" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="6490694779665510848" xil_pn:start_ts="1526958823">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -85,35 +90,40 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526970818" xil_pn:in_ck="3892209655642820943" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1526970818">
+    <transform xil_pn:end_ts="1526971400" xil_pn:in_ck="3892209655642820943" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1526971400">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="blink_in_order_test.vhd"/>
-      <outfile xil_pn:name="test_blink.vhd"/>
-    </transform>
-    <transform xil_pn:end_ts="1526970822" xil_pn:in_ck="3892209655642820943" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1590956542168192854" xil_pn:start_ts="1526970818">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="blink_in_order_test_beh.prj"/>
-      <outfile xil_pn:name="blink_in_order_test_isim_beh.exe"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1526970822" xil_pn:in_ck="7349304506260838223" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7838770956261267975" xil_pn:start_ts="1526970822">
+    <transform xil_pn:end_ts="1526971404" xil_pn:in_ck="3892209655642820943" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1590956542168192854" xil_pn:start_ts="1526971400">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="blink_in_order_test_isim_beh.wdb"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1526971405" xil_pn:in_ck="7349304506260838223" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7838770956261267975" xil_pn:start_ts="1526971404">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1526956022" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1526956022">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1526956962" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1424876421815827775" xil_pn:start_ts="1526956962">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -143,19 +153,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="blink_in_order.lso"/>
-      <outfile xil_pn:name="blink_in_order.ngc"/>
-      <outfile xil_pn:name="blink_in_order.ngr"/>
-      <outfile xil_pn:name="blink_in_order.prj"/>
-      <outfile xil_pn:name="blink_in_order.stx"/>
-      <outfile xil_pn:name="blink_in_order.syr"/>
-      <outfile xil_pn:name="blink_in_order.xst"/>
-      <outfile xil_pn:name="blink_in_order_test_beh.prj"/>
-      <outfile xil_pn:name="blink_in_order_test_stx_beh.prj"/>
-      <outfile xil_pn:name="blink_in_order_xst.xrpt"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 

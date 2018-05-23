@@ -5,3 +5,7 @@
 *.Iso
 *.x*
 *.n*
+*.obj
+*.didat
+*.ngr
+*.ngc
