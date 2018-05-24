@@ -51,7 +51,9 @@ ARCHITECTURE behavior OF pwm_testbench IS
          d2 : IN  std_logic;
          d3 : IN  std_logic;
          d4 : IN  std_logic;
-         pwm_out : OUT  std_logic
+         pwm_out : OUT  std_logic;
+			pins: out std_logic_vector(0 to 7);
+			digs: out std_logic_vector(0 to 7)
         );
     END COMPONENT;
     
@@ -70,6 +72,8 @@ ARCHITECTURE behavior OF pwm_testbench IS
 
  	--Outputs
    signal pwm_out : std_logic;
+	signal digs: std_logic_vector(0 to 7);
+	signal pins: std_logic_vector(0 to 7);
 
    -- Clock period definitions
    constant clk_period : time := 50 ns;
@@ -88,7 +92,9 @@ BEGIN
           d2 => d2,
           d3 => d3,
           d4 => d4,
-          pwm_out => pwm_out
+          pwm_out => pwm_out,
+			 pins => pins,
+			 digs => digs
         );
 
    -- Clock process definitions
@@ -108,14 +114,14 @@ BEGIN
 		reset <= '1';
       wait for 100 ns;	
 		reset <= '0';
-		f1 <= '0'; f2 <= '0'; f3 <= '0'; f4 <= '0';
-		d1 <= '0'; d2 <= '0'; d3 <= '0'; d4 <= '1';
-		wait for 200 ms;
+		-- f1 <= '0'; f2 <= '0'; f3 <= '0'; f4 <= '0'; -- 100 Hz
+		-- d1 <= '0'; d2 <= '0'; d3 <= '0'; d4 <= '1'; -- 10%
+		-- wait for 200 ms;
 		reset <= '1';
 		wait for 100 ns;
 		reset <= '0';
-		f1 <= '0'; f2 <= '0'; f3 <= '0'; f4 <= '1';
-		d1 <= '0'; d2 <= '1'; d3 <= '0'; d4 <= '1';
+		f1 <= '1'; f2 <= '0'; f3 <= '1'; f4 <= '0'; -- 1500 Hz
+		d1 <= '0'; d2 <= '1'; d3 <= '0'; d4 <= '1'; -- 50%
 
       -- insert stimulus here 
 
