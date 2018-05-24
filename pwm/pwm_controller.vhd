@@ -37,7 +37,9 @@ entity pwm is
      clk: in std_logic;
      f1, f2, f3, f4: in std_logic; -- first 4 bits, for pwm frequency
      d1, d2, d3, d4: in std_logic; -- last 4 bits, for pwm duty cycle
-     pwm_out: out std_logic := '0' -- there can not be a semicolon here!!!
+     pwm_out: out std_logic := '0'; -- there can not be a semicolon here!!!
+	  pins: out std_logic_vector(0 to 7); -- digital display, a, b, c, d, e, f, g, dp
+	  digs: out std_logic_vector(0 to 7) -- digit enable!
   );
 end pwm;
 
@@ -47,8 +49,47 @@ architecture rtl of pwm is
   signal led_state: std_logic := '0';
   constant clk_frequency : integer := 20000000; -- is this value correct??
   signal clk_count: integer:= 0;
-  signal duty, counter_reload, counter_high: integer:= 0;
+  signal duty, counter_reload, counter_high, count_display: integer:= 0;
   signal frequency: integer:=1; -- frequency is in denominator, cannot be 0
+  signal duty_0, duty_1, duty_2, duty_3, freq_0, freq_1, freq_2, freq_3: integer:= 0;
+  
+  procedure decoder (
+    signal num  : in integer;
+    signal count_display : in integer;
+	 signal pins : out std_logic_vector(0 to 7)
+    ) is
+  begin
+    if count_display /= 3 then -- no decimal point!
+	   case num is
+      when 0 => pins <= "11111100";
+		when 1 => pins <= "01100000";
+		when 2 => pins <= "11011010";
+	   when 3 => pins <= "11110010";
+		when 4 => pins <= "01100110";
+		when 5 => pins <= "10110010";
+		when 6 => pins <= "10111110";
+		when 7 => pins <= "11100000";
+		when 8 => pins <= "11111110";
+		when 9 => pins <= "11110110";
+		when others => pins <= "00000000";
+		end case;
+	 else
+	   case num is
+      when 0 => pins <= "11111101";
+		when 1 => pins <= "01100001";
+		when 2 => pins <= "11011011";
+	   when 3 => pins <= "11110011";
+		when 4 => pins <= "01100111";
+		when 5 => pins <= "10110011";
+		when 6 => pins <= "10111111";
+		when 7 => pins <= "11100001";
+		when 8 => pins <= "11111111";
+		when 9 => pins <= "11110111";
+		when others => pins <= "00000000";
+		end case;
+	 end if;
+  end decoder;
+  
 begin
 
   process(f1, f2, f3, f4) -- assign value to frequency based on f1..f4
@@ -176,7 +217,7 @@ begin
   counter_reload <= clk_frequency / frequency; -- the total counts for each cycle
   counter_high <= counter_reload * duty / 10; -- the counts for high level
   
-  pwm_generator: process(clk) is -- create 1 Hz clock
+  pwm_generator: process(clk, reset) is -- create 1 Hz clock
     -- constant clk_frequency : natural <= 20000000;
      -- signal count: natural; -- the counter for clock prescale
   begin
@@ -212,9 +253,58 @@ begin
       end if; -- if rising_edge
      end if; -- if reset
   end process pwm_generator;
-
-  display: process(clk) is
-  begin
   
+  duty_0 <= 0;
+  duty_1 <= 0;
+  duty_2 <= duty mod 10; -- last digit of duty
+  duty_3 <= duty / 10;
+  freq_0 <= 0;
+  freq_1 <= 0;
+  freq_2 <= (frequency / 100) mod 10;
+  freq_3 <= frequency / 1000;
+
+  display: process(clk, reset) is
+  begin
+    if reset = '1' then
+	   count_display <= 0;
+		pins <= "00000000";
+		digs <= "00000000";
+	 else
+      if (rising_edge(clk)) then
+		  if count_display = 8 then
+		    count_display <= 0;
+		  else
+		    count_display <= count_display + 1;
+		  end if;
+		  case count_display is
+		    when 0 => 
+			   digs <= "10000000"; -- duty last digit
+				decoder(duty_0, count_display, pins);
+			 when 1 => 
+			   digs <= "01000000";
+			   decoder(duty_1, count_display, pins);
+			 when 2 => 
+			   digs <= "00100000";
+				decoder(duty_2, count_display, pins);
+			 when 3 => 
+			   digs <= "00010000";
+				decoder(duty_3, count_display, pins); --REMEMBER to add decimal pt!!
+			 when 4 => 
+			   digs <= "00001000"; -- frequency last digit
+				decoder(freq_0, count_display, pins);
+			 when 5 => 
+			   digs <= "00000100";
+				decoder(freq_1, count_display, pins);
+			 when 6 => 
+			   digs <= "00000010";
+				decoder(freq_2, count_display, pins);
+			 when 7 => 
+			   digs <= "00000001";
+				decoder(freq_3, count_display, pins);
+			 when others =>
+			   digs <= "00000000";
+		  end case;
+	   end if; -- clk rising edge
+	 end if; -- reset = '1'
   end process display;
 end rtl;
