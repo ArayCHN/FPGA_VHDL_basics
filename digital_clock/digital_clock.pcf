@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu May 31 16:18:23 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "digs<0>" LOCATE = SITE "P124" LEVEL 1;
+COMP "digs<1>" LOCATE = SITE "P126" LEVEL 1;
+COMP "digs<2>" LOCATE = SITE "P127" LEVEL 1;
+COMP "digs<3>" LOCATE = SITE "P131" LEVEL 1;
+COMP "clk" LOCATE = SITE "P123" LEVEL 1;
+COMP "pins<0>" LOCATE = SITE "P1" LEVEL 1;
+COMP "pins<1>" LOCATE = SITE "P2" LEVEL 1;
+COMP "pins<2>" LOCATE = SITE "P5" LEVEL 1;
+COMP "reset" LOCATE = SITE "P56" LEVEL 1;
+COMP "pins<3>" LOCATE = SITE "P6" LEVEL 1;
+COMP "pins<4>" LOCATE = SITE "P7" LEVEL 1;
+COMP "pins<5>" LOCATE = SITE "P8" LEVEL 1;
+COMP "pins<6>" LOCATE = SITE "P9" LEVEL 1;
+COMP "pins<7>" LOCATE = SITE "P10" LEVEL 1;
+SCHEMATIC END;
+

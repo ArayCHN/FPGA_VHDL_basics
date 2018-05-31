@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            05/31/2018 - 16:20
+SOURCE          \\vmware-host\shared folders\WangRui\Programming\FPGA\digital_clock\digital_clock_bin.mcs
+DEVICE          XCF04S
+DATA_WIDTH      8
+FILL_DATA       0xFF
+SIGNATURE       0x02D1C544
+START_ADDRESS   0x00000000 END_ADDRESS 0x0005327B DIRECTION_UP   "Z:/WangRui/Programming/FPGA/digital_clock/digital_clock.bit" 6slx4tqg144

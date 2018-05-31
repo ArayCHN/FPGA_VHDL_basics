@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu May 31 16:10:03 2018
+# Process ID: 584
+# Log file: Z:/WangRui/Programming/FPGA/digital_clock/planAhead_run_1/planAhead.log
+# Journal file: Z:/WangRui/Programming/FPGA/digital_clock/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source Z:/WangRui/Programming/FPGA/digital_clock/pa.fromNetlist.tcl
+startgroup
+set_property package_pin P1 [get_ports {digs[0]}]
+endgroup
+startgroup
+set_property package_pin P2 [get_ports {digs[1]}]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports clk]
+endgroup
+save_constraints
