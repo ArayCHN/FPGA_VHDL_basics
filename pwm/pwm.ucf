@@ -1,0 +1,30 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "pins[7]" LOC = P10;
+NET "pins[6]" LOC = P9;
+NET "pins[5]" LOC = P8;
+NET "pins[4]" LOC = P7;
+NET "pins[3]" LOC = P6;
+NET "pins[2]" LOC = P5;
+NET "pins[1]" LOC = P2;
+NET "pins[0]" LOC = P1;
+NET "digs[1]" LOC = P126;
+NET "digs[2]" LOC = P127;
+NET "digs[3]" LOC = P131;
+NET "digs[4]" LOC = P132;
+NET "digs[5]" LOC = P133;
+NET "digs[6]" LOC = P134;
+NET "digs[0]" LOC = P124;
+NET "digs[7]" LOC = P137;
+NET "clk" LOC = P123;
+NET "d1" LOC = P115;
+NET "d2" LOC = P114;
+NET "d3" LOC = P112;
+NET "d4" LOC = P111;
+NET "f1" LOC = P119;
+NET "f2" LOC = P118;
+NET "f3" LOC = P117;
+NET "f4" LOC = P116;
+NET "reset" LOC = P56;
+NET "pwm_out" LOC = P38;

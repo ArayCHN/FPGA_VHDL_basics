@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o Z:\WangRui\Programming\FPGA\test_board//1 -x xcf04s -u 00000000 Z:/WangRui/Programming/FPGA/test_board/pwm.bit 
+
+PROM \\vmware-host\shared folders\WangRui\Programming\FPGA\test_board\1.prm map: Fri May 25 18:22:15 2018
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          512K
+PROM start    0000:0000
+PROM end      0007:ffff
+PROM checksum 02cf2d59
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0005:327b     May 25 18:20:38 2018 Z:/WangRui/Programming/FPGA/test_board/pwm.bit

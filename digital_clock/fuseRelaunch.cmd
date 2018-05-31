@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "Z:/WangRui/Programming/FPGA/digital_clock/digital_clock_testbench_isim_beh.exe" -prj "Z:/WangRui/Programming/FPGA/digital_clock/digital_clock_testbench_beh.prj" "work.digital_clock_testbench" 

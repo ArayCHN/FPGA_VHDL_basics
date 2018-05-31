@@ -1,0 +1,12 @@
+Storage Target: Xilinx Flash/PROM
+Storage Family: Platform Flash
+xcf04s          [4 M]
+FF
+pwm
+Z:\WangRui\Programming\FPGA\pwm\
+
+MCS
+No
+
+No
+No

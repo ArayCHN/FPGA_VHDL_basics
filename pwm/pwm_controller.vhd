@@ -43,19 +43,20 @@ entity pwm is
   );
 end pwm;
 
-architecture rtl of pwm is
-  signal count: integer := 0; -- 9 LEDs in total
+architecture behavioral of pwm is
+  -- signal count: integer range 0 to 10 := 0; -- 9 LEDs in total
   signal clk_1Hz: std_logic:= '0';
-  signal led_state: std_logic := '0';
-  constant clk_frequency : integer := 20000000; -- is this value correct??
-  signal clk_count: integer:= 0;
-  signal duty, counter_reload, counter_high, count_display: integer:= 0;
-  signal frequency: integer:=1; -- frequency is in denominator, cannot be 0
-  signal duty_0, duty_1, duty_2, duty_3, freq_0, freq_1, freq_2, freq_3: integer:= 0;
+  signal led_state: std_logic:= '0';
+  constant clk_frequency : integer:= 20000000; -- is this value correct??
+  signal count, count_clk: integer range 0 to 10000000:= 0;
+  signal counter_reload, counter_high: integer range 0 to 1000000;
+  signal duty, count_display: integer range 0 to 10:= 0;
+  signal frequency: integer range 0 to 4000:=1; -- frequency is in denominator, cannot be 0
+  signal duty_0, duty_1, duty_2, duty_3, freq_0, freq_1, freq_2, freq_3: integer range 0 to 10:= 0;
   
   procedure decoder (
-    signal num  : in integer;
-    signal count_display : in integer;
+    signal num  : in integer range 0 to 10;
+    signal count_display : in integer range 0 to 10;
 	 signal pins : out std_logic_vector(0 to 7)
     ) is
   begin
@@ -221,7 +222,7 @@ begin
     -- constant clk_frequency : natural <= 20000000;
      -- signal count: natural; -- the counter for clock prescale
   begin
-    if reset = '1' then
+    if reset = '0' then
        count <= 0;
        pwm_out <= '0';
      else
@@ -263,19 +264,29 @@ begin
   freq_2 <= (frequency / 100) mod 10;
   freq_3 <= frequency / 1000;
 
-  display: process(clk, reset) is
+  process(clk, reset) is
   begin
-    if reset = '1' then
-	   count_display <= 0;
+    if reset = '0' then
+	   count_clk <= 0;
+	 else
+      if (rising_edge(clk)) then
+		  if count_clk = 7999999 then
+		    count_clk <= 0;
+		  else
+		    count_clk <= count_clk + 1;
+		  end if;
+		 end if;
+	 end if;
+  end process;
+  
+  count_display <= count_clk / 1000000; -- prescale
+  
+  display: process(count_display, reset) is
+  begin
+    if reset = '0' then
 		pins <= "00000000";
 		digs <= "00000000";
 	 else
-      if (rising_edge(clk)) then
-		  if count_display = 8 then
-		    count_display <= 0;
-		  else
-		    count_display <= count_display + 1;
-		  end if;
 		  case count_display is
 		    when 0 => 
 			   digs <= "10000000"; -- duty last digit
@@ -304,7 +315,6 @@ begin
 			 when others =>
 			   digs <= "00000000";
 		  end case;
-	   end if; -- clk rising edge
 	 end if; -- reset = '1'
   end process display;
-end rtl;
+end behavioral;
