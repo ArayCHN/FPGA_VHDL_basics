@@ -8,7 +8,7 @@ digital_clock.pcf -ucf digital_clock.ucf
 
 Design file:              digital_clock.ncd
 Physical constraint file: digital_clock.pcf
-Device,package,speed:     xc6slx4,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -32,6 +32,14 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+clock_1Hz   |         9.468(R)|      SLOW  |         3.899(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
 Clock reset to Pad
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
@@ -48,8 +56,8 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    4.444|         |         |         |
-reset          |    5.205|    5.205|         |         |
+clk            |    4.264|         |         |         |
+reset          |    6.187|    6.187|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock reset
@@ -57,18 +65,18 @@ Clock to Setup on destination clock reset
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |         |         |   11.859|         |
+clk            |         |         |   11.461|         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu May 31 16:18:37 2018 
+Analysis completed Fri Jun 01 22:50:32 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 206 MB
+Peak Memory Usage: 214 MB
 
 
 

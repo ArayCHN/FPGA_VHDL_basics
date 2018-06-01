@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.23 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.23 secs
  
 --> Reading design: blink_in_order.prj
 
@@ -107,17 +107,16 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 Parsing VHDL file "\\vmware-host\shared folders\WangRui\Programming\FPGA\test_blink\test_blink.vhd" into library work
 Parsing entity <blink_in_order>.
-Parsing architecture <rtl> of entity <blink_in_order>.
+Parsing architecture <behavioral> of entity <blink_in_order>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
 
-Elaborating entity <blink_in_order> (architecture <rtl>) from library <work>.
-WARNING:HDLCompiler:92 - "\\vmware-host\shared folders\WangRui\Programming\FPGA\test_blink\test_blink.vhd" Line 55: reset should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "\\vmware-host\shared folders\WangRui\Programming\FPGA\test_blink\test_blink.vhd" Line 58: clk_1hz should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "\\vmware-host\shared folders\WangRui\Programming\FPGA\test_blink\test_blink.vhd" Line 73: reset should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "\\vmware-host\shared folders\WangRui\Programming\FPGA\test_blink\test_blink.vhd" Line 80: led_state should be on the sensitivity list of the process
+Elaborating entity <blink_in_order> (architecture <behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "\\vmware-host\shared folders\WangRui\Programming\FPGA\test_blink\test_blink.vhd" Line 58: reset should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "\\vmware-host\shared folders\WangRui\Programming\FPGA\test_blink\test_blink.vhd" Line 77: reset should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "\\vmware-host\shared folders\WangRui\Programming\FPGA\test_blink\test_blink.vhd" Line 84: led_state should be on the sensitivity list of the process
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -125,11 +124,10 @@ WARNING:HDLCompiler:92 - "\\vmware-host\shared folders\WangRui\Programming\FPGA\
 
 Synthesizing Unit <blink_in_order>.
     Related source file is "\\vmware-host\shared folders\WangRui\Programming\FPGA\test_blink\test_blink.vhd".
-WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 31-bit register for signal <clk_count>.
     Found 1-bit register for signal <output_led>.
     Found 1-bit register for signal <clk_1Hz>.
-    Found 31-bit adder for signal <clk_count[30]_GND_4_o_add_1_OUT> created at line 63.
+    Found 31-bit adder for signal <clk_count[30]_GND_4_o_add_1_OUT> created at line 67.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  33 D-type flip-flop(s).
@@ -175,41 +173,10 @@ Macro Statistics
 =========================================================================
 
 Optimizing unit <blink_in_order> ...
-WARNING:Xst:1293 - FF/Latch <clk_count_30> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_29> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_28> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_27> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_26> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_25> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_24> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_23> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_22> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_21> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_20> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_19> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_18> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_17> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_16> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_15> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_14> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_13> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_12> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_11> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_10> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_9> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_8> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_7> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_6> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_5> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_4> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_3> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_2> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_1> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_count_0> has a constant value of 0 in block <blink_in_order>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block blink_in_order, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block blink_in_order, actual ratio is 3.
 
 Final Macro Processing ...
 
@@ -217,8 +184,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2
- Flip-Flops                                            : 2
+# Registers                                            : 33
+ Flip-Flops                                            : 33
 
 =========================================================================
 
@@ -241,14 +208,23 @@ Top Level Output File Name         : blink_in_order.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 3
-#      INV                         : 3
-# FlipFlops/Latches                : 2
-#      FDC                         : 1
-#      FDE                         : 1
-# IO Buffers                       : 3
+# BELS                             : 134
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 30
+#      LUT2                        : 31
+#      LUT6                        : 8
+#      MUXCY                       : 30
+#      VCC                         : 1
+#      XORCY                       : 31
+# FlipFlops/Latches                : 33
+#      FDC                         : 32
+#      FDCE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 18
 #      IBUF                        : 1
-#      OBUF                        : 2
+#      OBUF                        : 17
 
 Device utilization summary:
 ---------------------------
@@ -257,22 +233,23 @@ Selected Device : 6slx4tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:               2  out of   4800     0%  
- Number of Slice LUTs:                    3  out of   2400     0%  
-    Number used as Logic:                 3  out of   2400     0%  
+ Number of Slice Registers:              33  out of   4800     0%  
+ Number of Slice LUTs:                   71  out of   2400     2%  
+    Number used as Logic:                71  out of   2400     2%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      5
-   Number with an unused Flip Flop:       3  out of      5    60%  
-   Number with an unused LUT:             2  out of      5    40%  
-   Number of fully used LUT-FF pairs:     0  out of      5     0%  
-   Number of unique control sets:         2
+ Number of LUT Flip Flop pairs used:     71
+   Number with an unused Flip Flop:      38  out of     71    53%  
+   Number with an unused LUT:             0  out of     71     0%  
+   Number of fully used LUT-FF pairs:    33  out of     71    46%  
+   Number of unique control sets:         3
 
 IO Utilization: 
- Number of IOs:                           4
- Number of bonded IOBs:                   3  out of    102     2%  
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of    102    18%  
 
 Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -295,7 +272,8 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk_1Hz                            | NONE(clk_1Hz)          | 2     |
+clk                                | BUFGP                  | 32    |
+clk_1Hz                            | NONE(led_state)        | 1     |
 -----------------------------------+------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -307,9 +285,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 2.338ns (Maximum Frequency: 427.716MHz)
-   Minimum input arrival time before clock: 3.291ns
-   Maximum output required time after clock: 4.240ns
+   Minimum period: 4.920ns (Maximum Frequency: 203.252MHz)
+   Minimum input arrival time before clock: 3.323ns
+   Maximum output required time after clock: 4.162ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -317,90 +295,140 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk_1Hz'
-  Clock period: 2.338ns (frequency: 427.716MHz)
-  Total number of paths / destination ports: 2 / 2
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.920ns (frequency: 203.252MHz)
+  Total number of paths / destination ports: 1489 / 33
 -------------------------------------------------------------------------
-Delay:               2.338ns (Levels of Logic = 1)
-  Source:            clk_1Hz (FF)
-  Destination:       clk_1Hz (FF)
-  Source Clock:      clk_1Hz rising
-  Destination Clock: clk_1Hz rising
+Delay:               4.920ns (Levels of Logic = 3)
+  Source:            clk_count_25 (FF)
+  Destination:       clk_count_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
 
-  Data Path: clk_1Hz to clk_1Hz
+  Data Path: clk_count_25 to clk_count_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              4   0.525   0.803  clk_1Hz (clk_1Hz)
-     INV:I->O              1   0.255   0.681  clk_1Hz_INV_4_o1_INV_0 (clk_1Hz_INV_4_o)
-     FDE:D                     0.074          clk_1Hz
+     FDC:C->Q              2   0.525   1.181  clk_count_25 (clk_count_25)
+     LUT6:I0->O            3   0.254   1.196  GND_4_o_clk_count[30]_equal_1_o<30>5 (GND_4_o_clk_count[30]_equal_1_o<30>4)
+     LUT6:I1->O           16   0.254   1.182  GND_4_o_clk_count[30]_equal_1_o<30>6 (GND_4_o_clk_count[30]_equal_1_o)
+     LUT2:I1->O            1   0.254   0.000  Mcount_clk_count_eqn_01 (Mcount_clk_count_eqn_0)
+     FDC:D                     0.074          clk_count_0
     ----------------------------------------
-    Total                      2.338ns (0.854ns logic, 1.484ns route)
-                                       (36.5% logic, 63.5% route)
+    Total                      4.920ns (1.361ns logic, 3.559ns route)
+                                       (27.7% logic, 72.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_1Hz'
-  Total number of paths / destination ports: 2 / 2
+Timing constraint: Default period analysis for Clock 'clk_1Hz'
+  Clock period: 2.260ns (frequency: 442.478MHz)
+  Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              3.291ns (Levels of Logic = 2)
+Delay:               2.260ns (Levels of Logic = 1)
+  Source:            led_state (FF)
+  Destination:       led_state (FF)
+  Source Clock:      clk_1Hz rising
+  Destination Clock: clk_1Hz rising
+
+  Data Path: led_state to led_state
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.525   0.725  led_state (led_state)
+     INV:I->O              1   0.255   0.681  led_state_INV_5_o1_INV_0 (led_state_INV_5_o)
+     FDC:D                     0.074          led_state
+    ----------------------------------------
+    Total                      2.260ns (0.854ns logic, 1.406ns route)
+                                       (37.8% logic, 62.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              3.323ns (Levels of Logic = 1)
   Source:            reset (PAD)
   Destination:       clk_1Hz (FF)
-  Destination Clock: clk_1Hz rising
+  Destination Clock: clk rising
 
   Data Path: reset to clk_1Hz
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.328   0.725  reset_IBUF (reset_IBUF)
-     INV:I->O              1   0.255   0.681  _n0021_inv1_INV_0 (_n0021_inv)
-     FDE:CE                    0.302          clk_1Hz
+     IBUF:I->O            33   1.328   1.536  reset_IBUF (reset_IBUF)
+     FDCE:CLR                  0.459          clk_1Hz
     ----------------------------------------
-    Total                      3.291ns (1.885ns logic, 1.406ns route)
-                                       (57.3% logic, 42.7% route)
+    Total                      3.323ns (1.787ns logic, 1.536ns route)
+                                       (53.8% logic, 46.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_1Hz'
-  Total number of paths / destination ports: 2 / 2
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_1Hz'
+  Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              4.240ns (Levels of Logic = 1)
-  Source:            clk_1Hz (FF)
-  Destination:       output_clock_1hz (PAD)
-  Source Clock:      clk_1Hz rising
+Offset:              3.323ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       led_state (FF)
+  Destination Clock: clk_1Hz rising
 
-  Data Path: clk_1Hz to output_clock_1hz
+  Data Path: reset to led_state
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              4   0.525   0.803  clk_1Hz (clk_1Hz)
-     OBUF:I->O                 2.912          output_clock_1hz_OBUF (output_clock_1hz)
+     IBUF:I->O            33   1.328   1.536  reset_IBUF (reset_IBUF)
+     FDC:CLR                   0.459          led_state
     ----------------------------------------
-    Total                      4.240ns (3.437ns logic, 0.803ns route)
-                                       (81.1% logic, 18.9% route)
+    Total                      3.323ns (1.787ns logic, 1.536ns route)
+                                       (53.8% logic, 46.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_1Hz'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            led_state (FF)
+  Destination:       output_led (PAD)
+  Source Clock:      clk_1Hz rising
+
+  Data Path: led_state to output_led
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.525   0.725  led_state (led_state)
+     OBUF:I->O                 2.912          output_led_OBUF (output_led)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.920|         |         |         |
+---------------+---------+---------+---------+---------+
+
 Clock to Setup on destination clock clk_1Hz
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_1Hz        |    2.338|         |         |         |
+clk_1Hz        |    2.260|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.97 secs
+Total CPU time to Xst completion: 6.70 secs
  
 --> 
 
-Total memory usage is 259272 kilobytes
+Total memory usage is 259336 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   36 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

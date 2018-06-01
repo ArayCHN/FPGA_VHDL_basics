@@ -1,0 +1,6 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = P123;
+NET "reset" LOC = P56;
+NET "output_led" LOC = P11;

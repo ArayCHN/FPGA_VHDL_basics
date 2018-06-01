@@ -33,13 +33,13 @@ use ieee.numeric_std.all;
 -- clock is 20MHz!
 entity pwm is
   port(
-    reset: in std_logic;
+     reset: in std_logic;
      clk: in std_logic;
      f1, f2, f3, f4: in std_logic; -- first 4 bits, for pwm frequency
      d1, d2, d3, d4: in std_logic; -- last 4 bits, for pwm duty cycle
      pwm_out: out std_logic := '0'; -- there can not be a semicolon here!!!
-	  pins: out std_logic_vector(0 to 7); -- digital display, a, b, c, d, e, f, g, dp
-	  digs: out std_logic_vector(0 to 7) -- digit enable!
+     pins: out std_logic_vector(0 to 7); -- digital display, a, b, c, d, e, f, g, dp
+     digs: out std_logic_vector(0 to 7) -- digit enable!
   );
 end pwm;
 
@@ -47,7 +47,7 @@ architecture behavioral of pwm is
   -- signal count: integer range 0 to 10 := 0; -- 9 LEDs in total
   signal clk_1Hz: std_logic:= '0';
   signal led_state: std_logic:= '0';
-  constant clk_frequency : integer:= 20000000; -- is this value correct??
+  constant clk_frequency : integer range 0 to 100000000:= 20000000; -- is this value correct??
   signal count, count_clk: integer range 0 to 10000000:= 0;
   signal counter_reload, counter_high: integer range 0 to 1000000;
   signal duty, count_display: integer range 0 to 10:= 0;
@@ -56,39 +56,39 @@ architecture behavioral of pwm is
   
   procedure decoder (
     signal num  : in integer range 0 to 10;
-    signal count_display : in integer range 0 to 10;
-	 signal pins : out std_logic_vector(0 to 7)
+     signal pins : out std_logic_vector(0 to 7);
+	  count_display : in integer range 0 to 10
     ) is
   begin
-    if count_display /= 3 then -- no decimal point!
-	   case num is
-      when 0 => pins <= "11111100";
-		when 1 => pins <= "01100000";
-		when 2 => pins <= "11011010";
-	   when 3 => pins <= "11110010";
-		when 4 => pins <= "01100110";
-		when 5 => pins <= "10110010";
-		when 6 => pins <= "10111110";
-		when 7 => pins <= "11100000";
-		when 8 => pins <= "11111110";
-		when 9 => pins <= "11110110";
-		when others => pins <= "00000000";
-		end case;
-	 else
-	   case num is
-      when 0 => pins <= "11111101";
-		when 1 => pins <= "01100001";
-		when 2 => pins <= "11011011";
-	   when 3 => pins <= "11110011";
-		when 4 => pins <= "01100111";
-		when 5 => pins <= "10110011";
-		when 6 => pins <= "10111111";
-		when 7 => pins <= "11100001";
-		when 8 => pins <= "11111111";
-		when 9 => pins <= "11110111";
-		when others => pins <= "00000000";
-		end case;
-	 end if;
+     if count_display /= 3 then -- no decimal point!
+       case num is
+        when 0 => pins <= "11111100";
+        when 1 => pins <= "01100000";
+        when 2 => pins <= "11011010";
+        when 3 => pins <= "11110010";
+        when 4 => pins <= "01100110";
+        when 5 => pins <= "10110110";
+        when 6 => pins <= "10111110";
+        when 7 => pins <= "11100000";
+        when 8 => pins <= "11111110";
+        when 9 => pins <= "11110110";
+        when others => pins <= "00000000";
+        end case;
+     else
+       case num is
+        when 0 => pins <= "11111101";
+        when 1 => pins <= "01100001";
+        when 2 => pins <= "11011011";
+        when 3 => pins <= "11110011";
+        when 4 => pins <= "01100111";
+        when 5 => pins <= "10110111";
+        when 6 => pins <= "10111111";
+        when 7 => pins <= "11100001";
+        when 8 => pins <= "11111111";
+        when 9 => pins <= "11110111";
+        when others => pins <= "00000000";
+        end case;
+     end if;
   end decoder;
   
 begin
@@ -230,11 +230,11 @@ begin
         if (count = counter_high - 1) then -- only exception: when counter_high == 0, never satisfies this condition
             if (count = counter_reload - 1) then
                count <= 0;
-					if counter_high /= 0 then
-					  pwm_out <= '1';
-					else
-					  pwm_out <= '0';
-					end if;
+                    if counter_high /= 0 then
+                      pwm_out <= '1';
+                    else
+                      pwm_out <= '0';
+                    end if;
              else
                count <= count + 1;
                pwm_out <= '0';
@@ -242,11 +242,11 @@ begin
           else -- not counter high, or counter_high == 0
             if (count = counter_reload - 1) then -- counter reload reached, change pwm to high
                count <= 0;
-					if counter_high /= 0 then
-					  pwm_out <= '1';
-					else
-					  pwm_out <= '0';
-					end if;
+                    if counter_high /= 0 then
+                      pwm_out <= '1';
+                    else
+                      pwm_out <= '0';
+                    end if;
              else -- not counter_high or counter_reload, do not change pwm level
                count <= count + 1;  
              end if; -- if counter_reload
@@ -267,54 +267,54 @@ begin
   process(clk, reset) is
   begin
     if reset = '0' then
-	   count_clk <= 0;
-	 else
+       count_clk <= 0;
+     else
       if (rising_edge(clk)) then
-		  if count_clk = 7999999 then
-		    count_clk <= 0;
-		  else
-		    count_clk <= count_clk + 1;
-		  end if;
-		 end if;
-	 end if;
+          if count_clk = 79999 then
+            count_clk <= 0;
+          else
+            count_clk <= count_clk + 1;
+          end if;
+         end if;
+     end if;
   end process;
   
-  count_display <= count_clk / 1000000; -- prescale
+  count_display <= count_clk / 10000; -- prescale
   
   display: process(count_display, reset) is
   begin
     if reset = '0' then
-		pins <= "00000000";
-		digs <= "00000000";
-	 else
-		  case count_display is
-		    when 0 => 
-			   digs <= "10000000"; -- duty last digit
-				decoder(duty_0, count_display, pins);
-			 when 1 => 
-			   digs <= "01000000";
-			   decoder(duty_1, count_display, pins);
-			 when 2 => 
-			   digs <= "00100000";
-				decoder(duty_2, count_display, pins);
-			 when 3 => 
-			   digs <= "00010000";
-				decoder(duty_3, count_display, pins); --REMEMBER to add decimal pt!!
-			 when 4 => 
-			   digs <= "00001000"; -- frequency last digit
-				decoder(freq_0, count_display, pins);
-			 when 5 => 
-			   digs <= "00000100";
-				decoder(freq_1, count_display, pins);
-			 when 6 => 
-			   digs <= "00000010";
-				decoder(freq_2, count_display, pins);
-			 when 7 => 
-			   digs <= "00000001";
-				decoder(freq_3, count_display, pins);
-			 when others =>
-			   digs <= "00000000";
-		  end case;
-	 end if; -- reset = '1'
+        pins <= "00000000";
+        digs <= "00000000";
+     else
+          case count_display is
+            when 0 => 
+               digs <= "10000000"; -- duty last digit
+                decoder(duty_0, pins, count_display);
+             when 1 => 
+               digs <= "01000000";
+               decoder(duty_1, pins, count_display);
+             when 2 => 
+               digs <= "00100000";
+                decoder(duty_2, pins, count_display);
+             when 3 => 
+                digs <= "00010000";
+                decoder(duty_3, pins, count_display); --REMEMBER to add decimal pt!!
+             when 4 => 
+               digs <= "00001000"; -- frequency last digit
+                decoder(freq_0, pins, count_display);
+             when 5 => 
+               digs <= "00000100";
+                decoder(freq_1, pins, count_display);
+             when 6 => 
+               digs <= "00000010";
+                decoder(freq_2, pins, count_display);
+             when 7 => 
+               digs <= "00000001";
+                decoder(freq_3, pins, count_display);
+             when others =>
+               digs <= "00000000";
+          end case;
+     end if; -- reset = '1'
   end process display;
 end behavioral;

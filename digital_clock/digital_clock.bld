@@ -2,7 +2,7 @@ Release 14.7 ngdbuild P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
--intstyle ise -dd _ngo -nt timestamp -uc digital_clock.ucf -p xc6slx4-tqg144-2
+-intstyle ise -dd _ngo -nt timestamp -uc digital_clock.ucf -p xc6slx9-tqg144-2
 digital_clock.ngc digital_clock.ngd
 
 Reading NGO file "Z:/WangRui/Programming/FPGA/digital_clock/digital_clock.ngc"

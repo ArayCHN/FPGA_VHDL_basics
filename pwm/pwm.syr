@@ -46,7 +46,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "pwm"
 Output Format                      : NGC
-Target Device                      : xc6slx4-2-tqg144
+Target Device                      : xc6slx9-2-tqg144
 
 ---- Source Options
 Top Module Name                    : pwm
@@ -444,52 +444,52 @@ Synthesizing Unit <div_12u_10u>.
 	inferred 111 Multiplexer(s).
 Unit <div_12u_10u> synthesized.
 
-Synthesizing Unit <div_24u_20u>.
+Synthesizing Unit <div_24u_14u>.
     Related source file is "".
-    Found 44-bit adder for signal <GND_13_o_b[19]_add_1_OUT> created at line 0.
-    Found 43-bit adder for signal <GND_13_o_b[19]_add_3_OUT> created at line 0.
-    Found 42-bit adder for signal <GND_13_o_b[19]_add_5_OUT> created at line 0.
-    Found 41-bit adder for signal <GND_13_o_b[19]_add_7_OUT> created at line 0.
-    Found 40-bit adder for signal <GND_13_o_b[19]_add_9_OUT> created at line 0.
-    Found 39-bit adder for signal <GND_13_o_b[19]_add_11_OUT> created at line 0.
-    Found 38-bit adder for signal <GND_13_o_b[19]_add_13_OUT> created at line 0.
-    Found 37-bit adder for signal <GND_13_o_b[19]_add_15_OUT> created at line 0.
-    Found 36-bit adder for signal <GND_13_o_b[19]_add_17_OUT> created at line 0.
-    Found 35-bit adder for signal <GND_13_o_b[19]_add_19_OUT> created at line 0.
-    Found 34-bit adder for signal <GND_13_o_b[19]_add_21_OUT> created at line 0.
-    Found 33-bit adder for signal <GND_13_o_b[19]_add_23_OUT> created at line 0.
-    Found 32-bit adder for signal <GND_13_o_b[19]_add_25_OUT> created at line 0.
-    Found 31-bit adder for signal <GND_13_o_b[19]_add_27_OUT> created at line 0.
-    Found 30-bit adder for signal <GND_13_o_b[19]_add_29_OUT> created at line 0.
-    Found 29-bit adder for signal <GND_13_o_b[19]_add_31_OUT> created at line 0.
-    Found 28-bit adder for signal <GND_13_o_b[19]_add_33_OUT> created at line 0.
-    Found 27-bit adder for signal <GND_13_o_b[19]_add_35_OUT> created at line 0.
-    Found 26-bit adder for signal <GND_13_o_b[19]_add_37_OUT> created at line 0.
-    Found 25-bit adder for signal <GND_13_o_b[19]_add_39_OUT> created at line 0.
-    Found 24-bit adder for signal <a[23]_b[19]_add_41_OUT> created at line 0.
+    Found 38-bit adder for signal <GND_13_o_b[13]_add_1_OUT> created at line 0.
+    Found 37-bit adder for signal <GND_13_o_b[13]_add_3_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_13_o_b[13]_add_5_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_13_o_b[13]_add_7_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_13_o_b[13]_add_9_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_13_o_b[13]_add_11_OUT> created at line 0.
+    Found 32-bit adder for signal <GND_13_o_b[13]_add_13_OUT> created at line 0.
+    Found 31-bit adder for signal <GND_13_o_b[13]_add_15_OUT> created at line 0.
+    Found 30-bit adder for signal <GND_13_o_b[13]_add_17_OUT> created at line 0.
+    Found 29-bit adder for signal <GND_13_o_b[13]_add_19_OUT> created at line 0.
+    Found 28-bit adder for signal <GND_13_o_b[13]_add_21_OUT> created at line 0.
+    Found 27-bit adder for signal <GND_13_o_b[13]_add_23_OUT> created at line 0.
+    Found 26-bit adder for signal <GND_13_o_b[13]_add_25_OUT> created at line 0.
+    Found 25-bit adder for signal <GND_13_o_b[13]_add_27_OUT> created at line 0.
+    Found 24-bit adder for signal <a[23]_b[13]_add_29_OUT> created at line 0.
+    Found 24-bit adder for signal <a[23]_GND_13_o_add_31_OUT> created at line 0.
+    Found 24-bit adder for signal <a[23]_GND_13_o_add_33_OUT> created at line 0.
+    Found 24-bit adder for signal <a[23]_GND_13_o_add_35_OUT> created at line 0.
+    Found 24-bit adder for signal <a[23]_GND_13_o_add_37_OUT> created at line 0.
+    Found 24-bit adder for signal <a[23]_GND_13_o_add_39_OUT> created at line 0.
+    Found 24-bit adder for signal <a[23]_GND_13_o_add_41_OUT> created at line 0.
     Found 24-bit adder for signal <a[23]_GND_13_o_add_43_OUT[23:0]> created at line 0.
     Found 24-bit adder for signal <a[23]_GND_13_o_add_45_OUT[23:0]> created at line 0.
     Found 24-bit adder for signal <a[23]_GND_13_o_add_47_OUT[23:0]> created at line 0.
-    Found 44-bit comparator lessequal for signal <BUS_0001> created at line 0
-    Found 43-bit comparator lessequal for signal <BUS_0002> created at line 0
-    Found 42-bit comparator lessequal for signal <BUS_0003> created at line 0
-    Found 41-bit comparator lessequal for signal <BUS_0004> created at line 0
-    Found 40-bit comparator lessequal for signal <BUS_0005> created at line 0
-    Found 39-bit comparator lessequal for signal <BUS_0006> created at line 0
-    Found 38-bit comparator lessequal for signal <BUS_0007> created at line 0
-    Found 37-bit comparator lessequal for signal <BUS_0008> created at line 0
-    Found 36-bit comparator lessequal for signal <BUS_0009> created at line 0
-    Found 35-bit comparator lessequal for signal <BUS_0010> created at line 0
-    Found 34-bit comparator lessequal for signal <BUS_0011> created at line 0
-    Found 33-bit comparator lessequal for signal <BUS_0012> created at line 0
-    Found 32-bit comparator lessequal for signal <BUS_0013> created at line 0
-    Found 31-bit comparator lessequal for signal <BUS_0014> created at line 0
-    Found 30-bit comparator lessequal for signal <BUS_0015> created at line 0
-    Found 29-bit comparator lessequal for signal <BUS_0016> created at line 0
-    Found 28-bit comparator lessequal for signal <BUS_0017> created at line 0
-    Found 27-bit comparator lessequal for signal <BUS_0018> created at line 0
-    Found 26-bit comparator lessequal for signal <BUS_0019> created at line 0
-    Found 25-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 38-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 37-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 31-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 30-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 29-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 28-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 27-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 26-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 25-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0020> created at line 0
     Found 24-bit comparator lessequal for signal <BUS_0021> created at line 0
     Found 24-bit comparator lessequal for signal <BUS_0022> created at line 0
     Found 24-bit comparator lessequal for signal <BUS_0023> created at line 0
@@ -499,7 +499,7 @@ Synthesizing Unit <div_24u_20u>.
 	inferred  24 Adder/Subtractor(s).
 	inferred  25 Comparator(s).
 	inferred 507 Multiplexer(s).
-Unit <div_24u_20u> synthesized.
+Unit <div_24u_14u> synthesized.
 
 =========================================================================
 HDL Synthesis Report
@@ -524,7 +524,7 @@ Macro Statistics
  21-bit adder                                          : 1
  21-bit subtractor                                     : 2
  22-bit adder                                          : 1
- 24-bit adder                                          : 26
+ 24-bit adder                                          : 32
  25-bit adder                                          : 28
  26-bit adder                                          : 4
  27-bit adder                                          : 4
@@ -539,13 +539,7 @@ Macro Statistics
  36-bit adder                                          : 3
  37-bit adder                                          : 2
  38-bit adder                                          : 1
- 39-bit adder                                          : 1
  4-bit adder                                           : 1
- 40-bit adder                                          : 1
- 41-bit adder                                          : 1
- 42-bit adder                                          : 1
- 43-bit adder                                          : 1
- 44-bit adder                                          : 1
  5-bit adder                                           : 2
  6-bit adder                                           : 2
  7-bit adder                                           : 2
@@ -567,7 +561,7 @@ Macro Statistics
  20-bit comparator lessequal                           : 1
  21-bit comparator lessequal                           : 1
  22-bit comparator lessequal                           : 1
- 24-bit comparator lessequal                           : 26
+ 24-bit comparator lessequal                           : 32
  25-bit comparator equal                               : 2
  25-bit comparator lessequal                           : 16
  26-bit comparator lessequal                           : 3
@@ -583,13 +577,7 @@ Macro Statistics
  36-bit comparator lessequal                           : 2
  37-bit comparator lessequal                           : 2
  38-bit comparator lessequal                           : 1
- 39-bit comparator lessequal                           : 1
  4-bit comparator lessequal                            : 2
- 40-bit comparator lessequal                           : 1
- 41-bit comparator lessequal                           : 1
- 42-bit comparator lessequal                           : 1
- 43-bit comparator lessequal                           : 1
- 44-bit comparator lessequal                           : 1
  5-bit comparator lessequal                            : 2
  6-bit comparator lessequal                            : 2
  7-bit comparator lessequal                            : 2
@@ -708,7 +696,7 @@ Macro Statistics
  20-bit comparator lessequal                           : 1
  21-bit comparator lessequal                           : 1
  22-bit comparator lessequal                           : 1
- 24-bit comparator lessequal                           : 26
+ 24-bit comparator lessequal                           : 32
  25-bit comparator equal                               : 2
  25-bit comparator lessequal                           : 16
  26-bit comparator lessequal                           : 3
@@ -724,13 +712,7 @@ Macro Statistics
  36-bit comparator lessequal                           : 2
  37-bit comparator lessequal                           : 2
  38-bit comparator lessequal                           : 1
- 39-bit comparator lessequal                           : 1
  4-bit comparator lessequal                            : 2
- 40-bit comparator lessequal                           : 1
- 41-bit comparator lessequal                           : 1
- 42-bit comparator lessequal                           : 1
- 43-bit comparator lessequal                           : 1
- 44-bit comparator lessequal                           : 1
  5-bit comparator lessequal                            : 2
  6-bit comparator lessequal                            : 2
  7-bit comparator lessequal                            : 2
@@ -757,16 +739,22 @@ Macro Statistics
 
 Optimizing unit <pwm> ...
 
-Optimizing unit <div_24u_20u> ...
+Optimizing unit <div_24u_14u> ...
 
 Optimizing unit <mod_12u_4u> ...
 
 Optimizing unit <div_24u_4u> ...
-WARNING:Xst:1293 - FF/Latch <count_clk_23> has a constant value of 0 in block <pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count_clk_17> has a constant value of 0 in block <pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count_clk_18> has a constant value of 0 in block <pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count_clk_19> has a constant value of 0 in block <pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count_clk_20> has a constant value of 0 in block <pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count_clk_21> has a constant value of 0 in block <pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count_clk_22> has a constant value of 0 in block <pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count_clk_23> has a constant value of 0 in block <pwm>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block pwm, actual ratio is 88.
+Found area constraint ratio of 100 (+ 5) on block pwm, actual ratio is 36.
 
 Final Macro Processing ...
 
@@ -774,8 +762,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 48
- Flip-Flops                                            : 48
+# Registers                                            : 42
+ Flip-Flops                                            : 42
 
 =========================================================================
 
@@ -798,21 +786,21 @@ Top Level Output File Name         : pwm.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2905
+# BELS                             : 2891
 #      GND                         : 1
-#      INV                         : 33
-#      LUT1                        : 43
-#      LUT2                        : 89
-#      LUT3                        : 270
-#      LUT4                        : 267
-#      LUT5                        : 554
-#      LUT6                        : 323
+#      INV                         : 31
+#      LUT1                        : 35
+#      LUT2                        : 65
+#      LUT3                        : 281
+#      LUT4                        : 269
+#      LUT5                        : 550
+#      LUT6                        : 332
 #      MUXCY                       : 699
-#      MUXF7                       : 3
+#      MUXF7                       : 5
 #      VCC                         : 1
 #      XORCY                       : 622
-# FlipFlops/Latches                : 56
-#      FDC                         : 48
+# FlipFlops/Latches                : 50
+#      FDC                         : 42
 #      LDC                         : 8
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
@@ -823,19 +811,19 @@ Primitive and Black Box Usage:
 Device utilization summary:
 ---------------------------
 
-Selected Device : 6slx4tqg144-2 
+Selected Device : 6slx9tqg144-2 
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              48  out of   4800     1%  
- Number of Slice LUTs:                 1579  out of   2400    65%  
-    Number used as Logic:              1579  out of   2400    65%  
+ Number of Slice Registers:              42  out of  11440     0%  
+ Number of Slice LUTs:                 1563  out of   5720    27%  
+    Number used as Logic:              1563  out of   5720    27%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1579
-   Number with an unused Flip Flop:    1531  out of   1579    96%  
-   Number with an unused LUT:             0  out of   1579     0%  
-   Number of fully used LUT-FF pairs:    48  out of   1579     3%  
+ Number of LUT Flip Flop pairs used:   1563
+   Number with an unused Flip Flop:    1521  out of   1563    97%  
+   Number with an unused LUT:             0  out of   1563     0%  
+   Number of fully used LUT-FF pairs:    42  out of   1563     2%  
    Number of unique control sets:         2
 
 IO Utilization: 
@@ -868,7 +856,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
 Mram__n03568(Mram__n035681:O)      | NONE(*)(pins_7)        | 8     |
-clk                                | BUFGP                  | 48    |
+clk                                | BUFGP                  | 42    |
 -----------------------------------+------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -884,8 +872,8 @@ Timing Summary:
 Speed Grade: -2
 
    Minimum period: 4.812ns (Maximum Frequency: 207.815MHz)
-   Minimum input arrival time before clock: 173.424ns
-   Maximum output required time after clock: 23.649ns
+   Minimum input arrival time before clock: 173.625ns
+   Maximum output required time after clock: 21.857ns
    Maximum combinational path delay: 6.255ns
 
 Timing Details:
@@ -895,7 +883,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 4.812ns (frequency: 207.815MHz)
-  Total number of paths / destination ports: 8930 / 48
+  Total number of paths / destination ports: 8567 / 42
 -------------------------------------------------------------------------
 Delay:               4.812ns (Levels of Logic = 34)
   Source:            count_2 (FF)
@@ -949,9 +937,9 @@ Delay:               4.812ns (Levels of Logic = 34)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Mram__n03568'
-  Total number of paths / destination ports: 18168 / 15
+  Total number of paths / destination ports: 8689 / 15
 -------------------------------------------------------------------------
-Offset:              16.918ns (Levels of Logic = 12)
+Offset:              15.302ns (Levels of Logic = 11)
   Source:            f3 (PAD)
   Destination:       pins_0 (LATCH)
   Destination Clock: Mram__n03568 falling
@@ -960,42 +948,42 @@ Offset:              16.918ns (Levels of Logic = 12)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            92   1.328   2.423  f3_IBUF (f3_IBUF)
-     LUT4:I0->O            6   0.254   1.306  frequency[11]_PWR_4_o_div_49/Mmux_n0515111 (frequency[11]_PWR_4_o_div_49/Madd_a[11]_GND_10_o_add_21_OUT[11:0]_lut<8>)
-     LUT6:I1->O           11   0.254   1.039  frequency[11]_PWR_4_o_div_49_OUT<2>1 (frequency[11]_PWR_4_o_div_49_OUT<2>)
-     LUT5:I4->O            3   0.254   0.874  frequency[11]_PWR_4_o_div_49_OUT<0>111 (frequency[11]_PWR_4_o_div_49_OUT<0>11)
-     LUT5:I3->O            4   0.250   1.259  frequency[11]_PWR_4_o_div_49/Mmux_n051991 (frequency[11]_PWR_4_o_div_49/Madd_a[11]_GND_10_o_add_23_OUT[11:0]_lut<6>)
-     LUT6:I0->O            6   0.254   0.984  frequency[11]_PWR_4_o_div_49_OUT<1>121 (frequency[11]_PWR_4_o_div_49/Madd_a[11]_GND_10_o_add_23_OUT[11:0]_cy<7>)
-     LUT5:I3->O            5   0.250   0.841  frequency[11]_PWR_4_o_div_49_OUT<1>13 (frequency[11]_PWR_4_o_div_49_OUT<1>)
-     LUT6:I5->O            2   0.254   1.156  frequency[11]_PWR_4_o_div_49_OUT<0>151 (frequency[11]_PWR_4_o_div_49_OUT<0>15)
-     LUT6:I1->O            1   0.254   0.682  frequency[11]_PWR_4_o_div_49_OUT<0>14 (frequency[11]_PWR_4_o_div_49_OUT<0>17)
-     LUT6:I5->O            8   0.254   1.052  frequency[11]_PWR_4_o_div_49_OUT<0>112 (frequency[11]_PWR_4_o_div_49_OUT<0>)
-     LUT6:I4->O            2   0.250   1.156  Mmux_count_display[3]_pins[3]_Mux_75_o122 (Mmux_count_display[3]_pins[3]_Mux_75_o123)
-     LUT6:I1->O            1   0.254   0.000  Mmux_count_display[3]_pins[0]_Mux_69_o14 (count_display[3]_pins[0]_Mux_69_o)
-     LDC:D                     0.036          pins_0
+     IBUF:I->O            86   1.328   2.328  f3_IBUF (f3_IBUF)
+     LUT4:I1->O           37   0.235   1.604  Mmux_frequency71 (frequency<4>)
+     LUT5:I4->O            3   0.254   0.874  frequency[11]_PWR_4_o_div_49_OUT<0>131 (frequency[11]_PWR_4_o_div_49_OUT<0>13)
+     LUT5:I3->O            3   0.250   0.874  frequency[11]_PWR_4_o_div_49/Mmux_n051991 (frequency[11]_PWR_4_o_div_49/Madd_a[11]_GND_10_o_add_23_OUT[11:0]_lut<6>)
+     LUT3:I1->O            4   0.250   0.804  frequency[11]_PWR_4_o_div_49_OUT<1>121 (frequency[11]_PWR_4_o_div_49/Madd_a[11]_GND_10_o_add_23_OUT[11:0]_cy<7>)
+     LUT5:I4->O            6   0.254   1.306  frequency[11]_PWR_4_o_div_49_OUT<1>1 (frequency[11]_PWR_4_o_div_49_OUT<1>)
+     LUT6:I1->O            1   0.254   0.000  frequency[11]_PWR_4_o_mod_50/BUS_0013_INV_1881_o16_F (N46)
+     MUXF7:I0->O           3   0.163   1.196  frequency[11]_PWR_4_o_mod_50/BUS_0013_INV_1881_o16 (frequency[11]_PWR_4_o_mod_50/BUS_0013_INV_1881_o)
+     LUT5:I0->O            8   0.254   1.374  frequency[11]_PWR_4_o_mod_50/Mmux_o31 (freq_2<2>)
+     LUT6:I1->O            2   0.254   1.156  Mmux_count_display[3]_pins[3]_Mux_75_o123 (Mmux_count_display[3]_pins[3]_Mux_75_o123)
+     LUT6:I1->O            1   0.254   0.000  Mmux_count_display[3]_pins[3]_Mux_75_o16 (count_display[3]_pins[3]_Mux_75_o)
+     LDC:D                     0.036          pins_3
     ----------------------------------------
-    Total                     16.918ns (4.146ns logic, 12.772ns route)
-                                       (24.5% logic, 75.5% route)
+    Total                     15.302ns (3.786ns logic, 11.516ns route)
+                                       (24.7% logic, 75.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 159506173573385650000000000000000000000000000000000000 / 73
+  Total number of paths / destination ports: 185781965669330240000000000000000000000000000000000000 / 67
 -------------------------------------------------------------------------
-Offset:              173.424ns (Levels of Logic = 201)
-  Source:            f3 (PAD)
+Offset:              173.625ns (Levels of Logic = 202)
+  Source:            f4 (PAD)
   Destination:       pwm_out (FF)
   Destination Clock: clk rising
 
-  Data Path: f3 to pwm_out
+  Data Path: f4 to pwm_out
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            92   1.328   2.375  f3_IBUF (f3_IBUF)
-     LUT4:I1->O            1   0.235   0.000  PWR_4_o_frequency[11]_div_26/Madd_GND_5_o_b[11]_add_17_OUT_Madd_Madd_lut<21>1 (PWR_4_o_frequency[11]_div_26/Madd_GND_5_o_b[11]_add_17_OUT_Madd_Madd_lut<21>)
-     MUXCY:S->O            1   0.215   0.000  PWR_4_o_frequency[11]_div_26/Madd_GND_5_o_b[11]_add_17_OUT_Madd_Madd_cy<21> (PWR_4_o_frequency[11]_div_26/Madd_GND_5_o_b[11]_add_17_OUT_Madd_Madd_cy<21>)
-     XORCY:CI->O           6   0.206   1.306  PWR_4_o_frequency[11]_div_26/Madd_GND_5_o_b[11]_add_17_OUT_Madd_Madd_xor<22> (PWR_4_o_frequency[11]_div_26/GND_5_o_b[11]_add_17_OUT<22>)
-     LUT5:I0->O            2   0.254   0.726  n0088<16>2_SW0 (N0)
-     LUT6:I5->O           28   0.254   1.729  n0088<16>2 (n0088<16>)
+     IBUF:I->O            97   1.328   2.294  f4_IBUF (PWR_4_o_frequency[11]_div_26/Madd_GND_5_o_b[11]_add_11_OUT_Madd_Madd_cy<22>)
+     LUT2:I0->O            1   0.250   0.000  PWR_4_o_frequency[11]_div_26/Madd_GND_5_o_b[11]_add_17_OUT_Madd_Madd_lut<20>1 (PWR_4_o_frequency[11]_div_26/Madd_GND_5_o_b[11]_add_17_OUT_Madd_Madd_lut<20>)
+     MUXCY:S->O            1   0.215   0.000  PWR_4_o_frequency[11]_div_26/Madd_GND_5_o_b[11]_add_17_OUT_Madd_Madd_cy<20> (PWR_4_o_frequency[11]_div_26/Madd_GND_5_o_b[11]_add_17_OUT_Madd_Madd_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_4_o_frequency[11]_div_26/Madd_GND_5_o_b[11]_add_17_OUT_Madd_Madd_cy<21> (PWR_4_o_frequency[11]_div_26/Madd_GND_5_o_b[11]_add_17_OUT_Madd_Madd_cy<21>)
+     XORCY:CI->O           7   0.206   1.340  PWR_4_o_frequency[11]_div_26/Madd_GND_5_o_b[11]_add_17_OUT_Madd_Madd_xor<22> (PWR_4_o_frequency[11]_div_26/GND_5_o_b[11]_add_17_OUT<22>)
+     LUT5:I0->O            2   0.254   0.726  n0088<16>22 (n0088<16>21)
+     LUT6:I5->O           28   0.254   1.729  n0088<16>24 (n0088<16>)
      LUT4:I0->O            3   0.254   1.042  PWR_4_o_frequency[11]_div_26/Mmux_a[0]_GND_5_o_MUX_709_o1121 (PWR_4_o_frequency[11]_div_26/a[20]_GND_5_o_MUX_689_o)
      LUT4:I0->O            0   0.254   0.000  PWR_4_o_frequency[11]_div_26/Mcompar_o<15>_lutdi1 (PWR_4_o_frequency[11]_div_26/Mcompar_o<15>_lutdi1)
      MUXCY:DI->O           1   0.181   0.000  PWR_4_o_frequency[11]_div_26/Mcompar_o<15>_cy<1> (PWR_4_o_frequency[11]_div_26/Mcompar_o<15>_cy<1>)
@@ -1017,8 +1005,8 @@ Offset:              173.424ns (Levels of Logic = 201)
      LUT4:I0->O            0   0.254   0.000  PWR_4_o_frequency[11]_div_26/Mcompar_o<12>_lutdi1 (PWR_4_o_frequency[11]_div_26/Mcompar_o<12>_lutdi1)
      MUXCY:DI->O           1   0.181   0.000  PWR_4_o_frequency[11]_div_26/Mcompar_o<12>_cy<1> (PWR_4_o_frequency[11]_div_26/Mcompar_o<12>_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  PWR_4_o_frequency[11]_div_26/Mcompar_o<12>_cy<2> (PWR_4_o_frequency[11]_div_26/Mcompar_o<12>_cy<2>)
-     MUXCY:CI->O           2   0.235   0.834  PWR_4_o_frequency[11]_div_26/Mcompar_o<12>_cy<3> (PWR_4_o_frequency[11]_div_26/Mcompar_o<12>_cy<3>)
-     LUT6:I4->O           40   0.250   2.084  PWR_4_o_frequency[11]_div_26/Mcompar_o<12>_cy<4> (n0088<12>)
+     MUXCY:CI->O           2   0.235   0.954  PWR_4_o_frequency[11]_div_26/Mcompar_o<12>_cy<3> (PWR_4_o_frequency[11]_div_26/Mcompar_o<12>_cy<3>)
+     LUT6:I3->O           40   0.235   2.084  PWR_4_o_frequency[11]_div_26/Mcompar_o<12>_cy<4> (n0088<12>)
      LUT5:I0->O            4   0.254   1.234  PWR_4_o_frequency[11]_div_26/Mmux_a[0]_a[24]_MUX_890_o1141 (PWR_4_o_frequency[11]_div_26/a[22]_a[24]_MUX_868_o)
      LUT5:I0->O            0   0.254   0.000  PWR_4_o_frequency[11]_div_26/Mcompar_o<11>_lutdi4 (PWR_4_o_frequency[11]_div_26/Mcompar_o<11>_lutdi4)
      MUXCY:DI->O           1   0.181   0.000  PWR_4_o_frequency[11]_div_26/Mcompar_o<11>_cy<4> (PWR_4_o_frequency[11]_div_26/Mcompar_o<11>_cy<4>)
@@ -1072,8 +1060,8 @@ Offset:              173.424ns (Levels of Logic = 201)
      LUT5:I0->O            2   0.254   1.156  PWR_4_o_frequency[11]_div_26/Mmux_n176361 (PWR_4_o_frequency[11]_div_26/n1763<14>)
      LUT5:I0->O            1   0.254   0.000  PWR_4_o_frequency[11]_div_26/Mcompar_o<1>_lut<5> (PWR_4_o_frequency[11]_div_26/Mcompar_o<1>_lut<5>)
      MUXCY:S->O            1   0.215   0.000  PWR_4_o_frequency[11]_div_26/Mcompar_o<1>_cy<5> (PWR_4_o_frequency[11]_div_26/Mcompar_o<1>_cy<5>)
-     MUXCY:CI->O           4   0.235   0.804  PWR_4_o_frequency[11]_div_26/Mcompar_o<1>_cy<6> (PWR_4_o_frequency[11]_div_26/Mcompar_o<1>_cy<6>)
-     LUT6:I5->O           25   0.254   1.833  PWR_4_o_frequency[11]_div_26/Mcompar_o<1>_cy<7> (n0088<1>)
+     MUXCY:CI->O           4   0.235   0.912  PWR_4_o_frequency[11]_div_26/Mcompar_o<1>_cy<6> (PWR_4_o_frequency[11]_div_26/Mcompar_o<1>_cy<6>)
+     LUT6:I4->O           25   0.250   1.833  PWR_4_o_frequency[11]_div_26/Mcompar_o<1>_cy<7> (n0088<1>)
      LUT5:I0->O            2   0.254   1.156  PWR_4_o_frequency[11]_div_26/Mmux_n166251 (PWR_4_o_frequency[11]_div_26/n1662<13>)
      LUT5:I0->O            1   0.254   0.000  PWR_4_o_frequency[11]_div_26/Mcompar_o<0>_lut<5> (PWR_4_o_frequency[11]_div_26/Mcompar_o<0>_lut<5>)
      MUXCY:S->O            1   0.215   0.000  PWR_4_o_frequency[11]_div_26/Mcompar_o<0>_cy<5> (PWR_4_o_frequency[11]_div_26/Mcompar_o<0>_cy<5>)
@@ -1117,26 +1105,26 @@ Offset:              173.424ns (Levels of Logic = 201)
      LUT6:I5->O            3   0.254   0.766  counter_reload[19]_PWR_4_o_div_28/Madd_a[23]_GND_7_o_add_23_OUT_cy<20>11 (counter_reload[19]_PWR_4_o_div_28/Madd_a[23]_GND_7_o_add_23_OUT_cy<20>)
      LUT6:I5->O            2   0.254   0.726  counter_reload[19]_PWR_4_o_div_28/Mmux_a[0]_a[23]_MUX_1512_o11511 (counter_reload[19]_PWR_4_o_div_28/Mmux_a[0]_a[23]_MUX_1512_o1151)
      LUT6:I5->O            4   0.254   0.912  counter_reload[19]_PWR_4_o_div_28/Mmux_a[0]_a[23]_MUX_1512_o114 (counter_reload[19]_PWR_4_o_div_28/a[22]_a[23]_MUX_1490_o)
-     LUT6:I4->O            4   0.250   0.804  counter_reload[19]_PWR_4_o_div_28/o<12>1_SW0 (N10)
+     LUT6:I4->O            4   0.250   0.804  counter_reload[19]_PWR_4_o_div_28/o<12>1_SW0 (N12)
      LUT6:I5->O           27   0.254   1.544  counter_reload[19]_PWR_4_o_div_28/o<12>1 (n0089<12>)
      LUT6:I4->O            6   0.250   0.876  counter_reload[19]_PWR_4_o_div_28/Mmux_a[0]_a[23]_MUX_1536_o1151 (counter_reload[19]_PWR_4_o_div_28/Mmux_a[0]_a[23]_MUX_1536_o1151)
      LUT5:I4->O            3   0.254   1.042  counter_reload[19]_PWR_4_o_div_28/Mmux_a[0]_a[23]_MUX_1536_o1141 (counter_reload[19]_PWR_4_o_div_28/a[22]_a[23]_MUX_1514_o)
-     LUT6:I2->O            2   0.254   0.726  counter_reload[19]_PWR_4_o_div_28/o<11>14_SW0 (N32)
+     LUT6:I2->O            2   0.254   0.726  counter_reload[19]_PWR_4_o_div_28/o<11>14_SW0 (N34)
      LUT6:I5->O           25   0.254   1.858  counter_reload[19]_PWR_4_o_div_28/o<11>14 (n0089<11>)
      LUT6:I0->O            3   0.254   1.042  counter_reload[19]_PWR_4_o_div_28/Mmux_a[0]_a[23]_MUX_1560_o181 (counter_reload[19]_PWR_4_o_div_28/a[17]_a[23]_MUX_1543_o)
      LUT6:I2->O           28   0.254   1.883  counter_reload[19]_PWR_4_o_div_28/o<10>21 (counter_reload[19]_PWR_4_o_div_28/o<10>2)
      LUT6:I1->O            5   0.254   1.117  counter_reload[19]_PWR_4_o_div_28/Mmux_a[0]_a[23]_MUX_1584_o191 (counter_reload[19]_PWR_4_o_div_28/a[18]_a[23]_MUX_1566_o)
      LUT4:I0->O            1   0.254   0.682  counter_reload[19]_PWR_4_o_div_28/o<9>21 (counter_reload[19]_PWR_4_o_div_28/o<9>2)
-     LUT6:I5->O            2   0.254   0.834  counter_reload[19]_PWR_4_o_div_28/o<9>24_SW0 (N30)
+     LUT6:I5->O            2   0.254   0.834  counter_reload[19]_PWR_4_o_div_28/o<9>24_SW0 (N32)
      LUT6:I4->O           53   0.250   2.072  counter_reload[19]_PWR_4_o_div_28/o<9>24 (n0089<9>)
      LUT3:I0->O            1   0.235   1.137  counter_reload[19]_PWR_4_o_div_28/Mmux_a[0]_a[23]_MUX_1608_o171 (counter_reload[19]_PWR_4_o_div_28/a[16]_a[23]_MUX_1592_o)
      LUT6:I0->O            2   0.254   0.726  counter_reload[19]_PWR_4_o_div_28/o<8>21 (counter_reload[19]_PWR_4_o_div_28/o<8>2)
      LUT5:I4->O            1   0.254   0.000  counter_reload[19]_PWR_4_o_div_28/o<8>24_SW0_G (N41)
-     MUXF7:I1->O           2   0.175   0.834  counter_reload[19]_PWR_4_o_div_28/o<8>24_SW0 (N28)
+     MUXF7:I1->O           2   0.175   0.834  counter_reload[19]_PWR_4_o_div_28/o<8>24_SW0 (N30)
      LUT6:I4->O           37   0.250   2.034  counter_reload[19]_PWR_4_o_div_28/o<8>24 (n0089<8>)
      LUT5:I0->O            3   0.254   1.221  counter_reload[19]_PWR_4_o_div_28/Mmux_a[0]_a[23]_MUX_1632_o191 (counter_reload[19]_PWR_4_o_div_28/a[18]_a[23]_MUX_1614_o)
      LUT6:I0->O            1   0.254   0.682  counter_reload[19]_PWR_4_o_div_28/o<7>21 (counter_reload[19]_PWR_4_o_div_28/o<7>2)
-     LUT6:I5->O            2   0.254   0.726  counter_reload[19]_PWR_4_o_div_28/o<7>24_SW0 (N26)
+     LUT6:I5->O            2   0.254   0.726  counter_reload[19]_PWR_4_o_div_28/o<7>24_SW0 (N28)
      LUT6:I5->O           33   0.254   1.967  counter_reload[19]_PWR_4_o_div_28/o<7>24 (n0089<7>)
      LUT5:I0->O            3   0.254   1.196  counter_reload[19]_PWR_4_o_div_28/Mmux_a[0]_a[23]_MUX_1656_o1231 (counter_reload[19]_PWR_4_o_div_28/a[9]_a[23]_MUX_1647_o)
      LUT5:I0->O           36   0.254   1.695  counter_reload[19]_PWR_4_o_div_28/o<6>23 (counter_reload[19]_PWR_4_o_div_28/o<6>22)
@@ -1193,7 +1181,7 @@ Offset:              173.424ns (Levels of Logic = 201)
      LUT4:I2->O            1   0.250   0.000  pwm_out_rstpot (pwm_out_rstpot)
      FDC:D                     0.074          pwm_out
     ----------------------------------------
-    Total                    173.424ns (38.623ns logic, 134.801ns route)
+    Total                    173.625ns (38.642ns logic, 134.982ns route)
                                        (22.3% logic, 77.7% route)
 
 =========================================================================
@@ -1217,35 +1205,35 @@ Offset:              4.174ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 619025 / 9
+  Total number of paths / destination ports: 803081 / 9
 -------------------------------------------------------------------------
-Offset:              23.649ns (Levels of Logic = 14)
-  Source:            count_clk_12 (FF)
-  Destination:       digs<0> (PAD)
+Offset:              21.857ns (Levels of Logic = 14)
+  Source:            count_clk_9 (FF)
+  Destination:       digs<3> (PAD)
   Source Clock:      clk rising
 
-  Data Path: count_clk_12 to digs<0>
+  Data Path: count_clk_9 to digs<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              9   0.525   1.252  count_clk_12 (count_clk_12)
-     LUT4:I0->O            1   0.254   0.682  count_clk[23]_PWR_4_o_div_56/o<3>21 (count_clk[23]_PWR_4_o_div_56/o<3>2)
-     LUT6:I5->O            2   0.254   0.726  count_clk[23]_PWR_4_o_div_56/o<3>22 (count_clk[23]_PWR_4_o_div_56/o<3>21)
-     LUT6:I5->O           61   0.254   2.134  count_clk[23]_PWR_4_o_div_56/o<3>23 (n0091<3>)
-     LUT3:I0->O            1   0.235   0.910  count_clk[23]_PWR_4_o_div_56/Mmux_n191121 (count_clk[23]_PWR_4_o_div_56/n1911<10>)
-     LUT6:I3->O            1   0.235   0.682  count_clk[23]_PWR_4_o_div_56/o<2>22 (count_clk[23]_PWR_4_o_div_56/o<2>21)
-     LUT6:I5->O            4   0.254   1.080  count_clk[23]_PWR_4_o_div_56/o<2>23 (count_clk[23]_PWR_4_o_div_56/o<2>22)
-     LUT6:I2->O           52   0.254   2.267  count_clk[23]_PWR_4_o_div_56/o<2>24 (n0091<2>)
-     LUT5:I0->O            2   0.254   1.181  count_clk[23]_PWR_4_o_div_56/Mmux_n191521 (count_clk[23]_PWR_4_o_div_56/n1915<10>)
-     LUT6:I0->O            1   0.254   0.790  count_clk[23]_PWR_4_o_div_56/o<1>21 (count_clk[23]_PWR_4_o_div_56/o<1>2)
-     LUT5:I3->O            1   0.250   1.137  count_clk[23]_PWR_4_o_div_56/o<1>22 (count_clk[23]_PWR_4_o_div_56/o<1>21)
-     LUT6:I0->O           18   0.254   1.690  count_clk[23]_PWR_4_o_div_56/o<1>23 (n0091<1>)
-     LUT6:I0->O           21   0.254   1.740  count_clk[23]_PWR_4_o_div_56/o<0>28 (n0091<0>)
-     LUT5:I0->O            1   0.254   0.681  Mmux_digs41 (digs_3_OBUF)
-     OBUF:I->O                 2.912          digs_3_OBUF (digs<3>)
+     FDC:C->Q              8   0.525   1.220  count_clk_9 (count_clk_9)
+     LUT4:I0->O           18   0.254   1.343  count_clk[23]_PWR_4_o_div_56/o<3>21 (count_clk[23]_PWR_4_o_div_56/o<3>2)
+     LUT5:I3->O           46   0.250   1.982  count_clk[23]_PWR_4_o_div_56/o<3>23 (n0091<3>)
+     LUT3:I0->O            1   0.235   0.958  count_clk[23]_PWR_4_o_div_56/Mmux_n1701241 (count_clk[23]_PWR_4_o_div_56/n1701<9>)
+     LUT4:I0->O            1   0.254   0.958  count_clk[23]_PWR_4_o_div_56/o<2>21 (count_clk[23]_PWR_4_o_div_56/o<2>2)
+     LUT6:I2->O            1   0.254   0.790  count_clk[23]_PWR_4_o_div_56/o<2>22 (count_clk[23]_PWR_4_o_div_56/o<2>21)
+     LUT6:I4->O           52   0.250   2.065  count_clk[23]_PWR_4_o_div_56/o<2>24 (n0091<2>)
+     LUT3:I0->O            1   0.235   0.910  count_clk[23]_PWR_4_o_div_56/Mmux_n1705131 (count_clk[23]_PWR_4_o_div_56/n1705<20>)
+     LUT3:I0->O            2   0.235   0.726  count_clk[23]_PWR_4_o_div_56/o<0>331_SW0 (N4)
+     LUT6:I5->O            1   0.254   0.000  count_clk[23]_PWR_4_o_div_56/o<0>331_G (N43)
+     MUXF7:I1->O           2   0.175   0.726  count_clk[23]_PWR_4_o_div_56/o<0>331 (count_clk[23]_PWR_4_o_div_56/o<0>331)
+     LUT6:I5->O           17   0.254   1.208  count_clk[23]_PWR_4_o_div_56/o<1>3 (n0091<1>)
+     MUXF7:S->O           22   0.185   1.764  count_clk[23]_PWR_4_o_div_56/o<0>37 (n0091<0>)
+     LUT5:I0->O            1   0.254   0.681  Mmux_digs61 (digs_5_OBUF)
+     OBUF:I->O                 2.912          digs_5_OBUF (digs<5>)
     ----------------------------------------
-    Total                     23.649ns (6.697ns logic, 16.952ns route)
-                                       (28.3% logic, 71.7% route)
+    Total                     21.857ns (6.526ns logic, 15.331ns route)
+                                       (29.9% logic, 70.1% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -1260,8 +1248,8 @@ Delay:               6.255ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             9   1.328   1.084  reset_IBUF (reset_IBUF)
-     LUT5:I3->O            1   0.250   0.681  Mmux_digs41 (digs_3_OBUF)
-     OBUF:I->O                 2.912          digs_3_OBUF (digs<3>)
+     LUT5:I3->O            1   0.250   0.681  Mmux_digs71 (digs_6_OBUF)
+     OBUF:I->O                 2.912          digs_6_OBUF (digs<6>)
     ----------------------------------------
     Total                      6.255ns (4.490ns logic, 1.765ns route)
                                        (71.8% logic, 28.2% route)
@@ -1276,7 +1264,7 @@ Clock to Setup on destination clock Mram__n03568
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |         |         |   22.309|         |
+clk            |         |         |   20.018|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
@@ -1290,14 +1278,14 @@ clk            |    4.812|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 30.00 secs
-Total CPU time to Xst completion: 30.13 secs
+Total REAL time to Xst completion: 31.00 secs
+Total CPU time to Xst completion: 31.42 secs
  
 --> 
 
-Total memory usage is 283016 kilobytes
+Total memory usage is 313288 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   17 (   0 filtered)
+Number of warnings :   23 (   0 filtered)
 Number of infos    :    6 (   0 filtered)
 

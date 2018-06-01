@@ -3,7 +3,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 promgen -w -p mcs -c FF -o Z:\WangRui\Programming\FPGA\pwm\//pwm_bin -x xcf04s -u 00000000 Z:/WangRui/Programming/FPGA/pwm/pwm.bit 
 
-PROM \\vmware-host\shared folders\WangRui\Programming\FPGA\pwm\pwm_bin.prm map: Fri May 25 18:59:53 2018
+PROM \\vmware-host\shared folders\WangRui\Programming\FPGA\pwm\pwm_bin.prm map: Fri Jun 01 11:27:54 2018
 
 Calculating PROM checksum with fill value ff
 
@@ -11,7 +11,7 @@ Format        Mcs86 (32-bit)
 Size          512K
 PROM start    0000:0000
 PROM end      0007:ffff
-PROM checksum 04ec2e93
+PROM checksum 04973332
 
         Addr1        Addr2                     Date File(s)
-    0000:0000    0003:834d     May 25 18:59:36 2018 Z:/WangRui/Programming/FPGA/pwm/pwm.bit
+    0000:0000    0003:dc35     Jun 01 11:26:27 2018 Z:/WangRui/Programming/FPGA/pwm/pwm.bit

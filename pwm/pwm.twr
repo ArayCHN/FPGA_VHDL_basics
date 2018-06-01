@@ -7,7 +7,7 @@ C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
 
 Design file:              pwm.ncd
 Physical constraint file: pwm.pcf
-Device,package,speed:     xc6slx4,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -36,15 +36,15 @@ Setup/Hold to clock clk
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-d1          |  101.245(R)|      SLOW  |   -3.883(R)|      FAST  |clk_BUFGP         |   0.000|
-d2          |  100.095(R)|      SLOW  |   -4.044(R)|      FAST  |clk_BUFGP         |   0.000|
-d3          |  102.161(R)|      SLOW  |   -3.969(R)|      FAST  |clk_BUFGP         |   0.000|
-d4          |  100.331(R)|      SLOW  |   -3.732(R)|      FAST  |clk_BUFGP         |   0.000|
-f1          |  236.246(R)|      SLOW  |   -2.510(R)|      FAST  |clk_BUFGP         |   0.000|
-f2          |  235.916(R)|      SLOW  |   -2.816(R)|      FAST  |clk_BUFGP         |   0.000|
-f3          |  234.735(R)|      SLOW  |   -2.905(R)|      FAST  |clk_BUFGP         |   0.000|
-f4          |  235.724(R)|      SLOW  |   -2.247(R)|      FAST  |clk_BUFGP         |   0.000|
-reset       |    6.612(R)|      SLOW  |   -1.066(R)|      FAST  |clk_BUFGP         |   0.000|
+d1          |   78.740(R)|      SLOW  |   -3.292(R)|      FAST  |clk_BUFGP         |   0.000|
+d2          |   78.904(R)|      SLOW  |   -3.531(R)|      FAST  |clk_BUFGP         |   0.000|
+d3          |   81.140(R)|      SLOW  |   -3.434(R)|      FAST  |clk_BUFGP         |   0.000|
+d4          |   80.393(R)|      SLOW  |   -3.277(R)|      FAST  |clk_BUFGP         |   0.000|
+f1          |  156.300(R)|      SLOW  |   -2.693(R)|      FAST  |clk_BUFGP         |   0.000|
+f2          |  157.731(R)|      SLOW  |   -3.410(R)|      FAST  |clk_BUFGP         |   0.000|
+f3          |  157.271(R)|      SLOW  |   -2.981(R)|      FAST  |clk_BUFGP         |   0.000|
+f4          |  158.373(R)|      SLOW  |   -2.851(R)|      FAST  |clk_BUFGP         |   0.000|
+reset       |    3.923(R)|      SLOW  |   -1.193(R)|      FAST  |clk_BUFGP         |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -52,15 +52,15 @@ Clock clk to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-digs<0>     |        27.835(R)|      SLOW  |         6.469(R)|      FAST  |clk_BUFGP         |   0.000|
-digs<1>     |        27.709(R)|      SLOW  |         6.370(R)|      FAST  |clk_BUFGP         |   0.000|
-digs<2>     |        27.550(R)|      SLOW  |         6.481(R)|      FAST  |clk_BUFGP         |   0.000|
-digs<3>     |        27.760(R)|      SLOW  |         6.708(R)|      FAST  |clk_BUFGP         |   0.000|
-digs<4>     |        27.183(R)|      SLOW  |         6.067(R)|      FAST  |clk_BUFGP         |   0.000|
-digs<5>     |        27.057(R)|      SLOW  |         5.978(R)|      FAST  |clk_BUFGP         |   0.000|
-digs<6>     |        27.229(R)|      SLOW  |         6.045(R)|      FAST  |clk_BUFGP         |   0.000|
-digs<7>     |        27.201(R)|      SLOW  |         6.090(R)|      FAST  |clk_BUFGP         |   0.000|
-pwm_out     |        11.833(R)|      SLOW  |         5.290(R)|      FAST  |clk_BUFGP         |   0.000|
+digs<0>     |        27.286(R)|      SLOW  |         7.225(R)|      FAST  |clk_BUFGP         |   0.000|
+digs<1>     |        27.012(R)|      SLOW  |         6.819(R)|      FAST  |clk_BUFGP         |   0.000|
+digs<2>     |        26.832(R)|      SLOW  |         6.812(R)|      FAST  |clk_BUFGP         |   0.000|
+digs<3>     |        26.966(R)|      SLOW  |         6.824(R)|      FAST  |clk_BUFGP         |   0.000|
+digs<4>     |        26.304(R)|      SLOW  |         6.774(R)|      FAST  |clk_BUFGP         |   0.000|
+digs<5>     |        26.556(R)|      SLOW  |         6.449(R)|      FAST  |clk_BUFGP         |   0.000|
+digs<6>     |        26.276(R)|      SLOW  |         6.690(R)|      FAST  |clk_BUFGP         |   0.000|
+digs<7>     |        26.519(R)|      SLOW  |         6.448(R)|      FAST  |clk_BUFGP         |   0.000|
+pwm_out     |        11.909(R)|      SLOW  |         5.380(R)|      FAST  |clk_BUFGP         |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -68,32 +68,32 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    6.668|         |         |         |
+clk            |    4.405|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-reset          |digs<0>        |   16.268|
-reset          |digs<1>        |   16.142|
-reset          |digs<2>        |   16.185|
-reset          |digs<3>        |   16.395|
-reset          |digs<4>        |   15.870|
-reset          |digs<5>        |   15.744|
-reset          |digs<6>        |   15.940|
-reset          |digs<7>        |   15.912|
+reset          |digs<0>        |   16.053|
+reset          |digs<1>        |   15.936|
+reset          |digs<2>        |   15.599|
+reset          |digs<3>        |   15.890|
+reset          |digs<4>        |   15.004|
+reset          |digs<5>        |   15.468|
+reset          |digs<6>        |   14.976|
+reset          |digs<7>        |   15.431|
 ---------------+---------------+---------+
 
 
-Analysis completed Fri May 25 18:59:22 2018 
+Analysis completed Fri Jun 01 20:37:23 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 243 MB
+Peak Memory Usage: 249 MB
 
 
 

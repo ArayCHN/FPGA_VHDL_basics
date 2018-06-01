@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o Z:\WangRui\Programming\FPGA\test_blink//1 -x xcf04s -u 00000000 Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.bit 
+
+PROM \\vmware-host\shared folders\WangRui\Programming\FPGA\test_blink\1.prm map: Fri Jun 01 09:29:13 2018
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          512K
+PROM start    0000:0000
+PROM end      0007:ffff
+PROM checksum 062e18dc
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0001:f32b     Jun 01 09:28:24 2018 Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.bit

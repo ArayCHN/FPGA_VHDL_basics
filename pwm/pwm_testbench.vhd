@@ -111,17 +111,17 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-		reset <= '1';
+		reset <= '0';
       wait for 100 ns;	
-		reset <= '0';
-		-- f1 <= '0'; f2 <= '0'; f3 <= '0'; f4 <= '0'; -- 100 Hz
-		-- d1 <= '0'; d2 <= '0'; d3 <= '0'; d4 <= '1'; -- 10%
-		-- wait for 200 ms;
 		reset <= '1';
-		wait for 100 ns;
+		f1 <= '0'; f2 <= '0'; f3 <= '0'; f4 <= '0'; -- 100 Hz
+		d1 <= '0'; d2 <= '0'; d3 <= '0'; d4 <= '1'; -- 10%
+		wait for 200 ms;
 		reset <= '0';
+		wait for 100 ns;
+		reset <= '1';
 		f1 <= '1'; f2 <= '0'; f3 <= '1'; f4 <= '0'; -- 1500 Hz
-		d1 <= '0'; d2 <= '1'; d3 <= '0'; d4 <= '1'; -- 50%
+		d1 <= '1'; d2 <= '0'; d3 <= '1'; d4 <= '0'; -- 100%
 
       -- insert stimulus here 
 

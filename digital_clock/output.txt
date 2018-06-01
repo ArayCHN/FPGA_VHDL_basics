@@ -1,0 +1,9 @@
+Storage Target: Xilinx Flash/PROM
+Storage Family: Platform Flash
+xcf04s          [4 M]
+FF
+0
+Z:\WangRui\Programming\FPGA\digital_clock/
+
+MCS
+No

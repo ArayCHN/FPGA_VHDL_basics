@@ -10,3 +10,18 @@ xst -intstyle ise -ifn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.xs
 xst -intstyle ise -ifn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.xst" -ofn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.syr" 
 xst -intstyle ise -ifn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.xst" -ofn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.syr" 
 xst -intstyle ise -ifn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.xst" -ofn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.syr" 
+xst -intstyle ise -ifn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.xst" -ofn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.syr" 
+xst -intstyle ise -ifn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.xst" -ofn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.syr" 
+xst -intstyle ise -ifn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.xst" -ofn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc blink_in_order.ucf -p xc6slx4-tqg144-2 blink_in_order.ngc blink_in_order.ngd  
+map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_in_order_map.ncd blink_in_order.ngd blink_in_order.pcf 
+par -w -intstyle ise -ol high -mt off blink_in_order_map.ncd blink_in_order.ncd blink_in_order.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml blink_in_order.twx blink_in_order.ncd -o blink_in_order.twr blink_in_order.pcf -ucf blink_in_order.ucf 
+bitgen -intstyle ise -f blink_in_order.ut blink_in_order.ncd 
+bitgen -intstyle ise -f blink_in_order.ut blink_in_order.ncd 
+xst -intstyle ise -ifn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.xst" -ofn "Z:/WangRui/Programming/FPGA/test_blink/blink_in_order.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc blink_in_order.ucf -p xc6slx4-tqg144-2 blink_in_order.ngc blink_in_order.ngd  
+map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_in_order_map.ncd blink_in_order.ngd blink_in_order.pcf 
+par -w -intstyle ise -ol high -mt off blink_in_order_map.ncd blink_in_order.ncd blink_in_order.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml blink_in_order.twx blink_in_order.ncd -o blink_in_order.twr blink_in_order.pcf -ucf blink_in_order.ucf 
+bitgen -intstyle ise -f blink_in_order.ut blink_in_order.ncd 

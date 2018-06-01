@@ -1,7 +1,7 @@
 #Release 14.7 - par P.20131013 (nt64)
 #Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-#Thu May 31 16:18:31 2018
+#Fri Jun 01 22:50:25 2018
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -11,7 +11,7 @@
 #
 #INPUT FILE:       digital_clock_map.ncd
 #OUTPUT FILE:      digital_clock_pad.csv
-#PART TYPE:        xc6slx4
+#PART TYPE:        xc6slx9
 #SPEED GRADE:      -2
 #PACKAGE:          tqg144
 #
@@ -27,10 +27,10 @@ P5,pins<2>,IOB,IO_L52N_3,OUTPUT,LVCMOS25*,3,12,SLOW,,,,LOCATED,YES,NONE,
 P6,pins<3>,IOB,IO_L52P_3,OUTPUT,LVCMOS25*,3,12,SLOW,,,,LOCATED,YES,NONE,
 P7,pins<4>,IOB,IO_L51N_3,OUTPUT,LVCMOS25*,3,12,SLOW,,,,LOCATED,YES,NONE,
 P8,pins<5>,IOB,IO_L51P_3,OUTPUT,LVCMOS25*,3,12,SLOW,,,,LOCATED,YES,NONE,
-P9,pins<6>,IOB,IO_L50N_3,OUTPUT,LVCMOS25*,3,12,SLOW,,,,LOCATED,NO,NONE,
+P9,pins<6>,IOB,IO_L50N_3,OUTPUT,LVCMOS25*,3,12,SLOW,,,,LOCATED,YES,NONE,
 P10,pins<7>,IOB,IO_L50P_3,OUTPUT,LVCMOS25*,3,12,SLOW,,,,LOCATED,NO,NONE,
 P11,,IOBS,IO_L49N_3,UNUSED,,3,,,,,,,,,
-P12,,IOBM,IO_L49P_3,UNUSED,,3,,,,,,,,,
+P12,clock_1Hz,IOB,IO_L49P_3,OUTPUT,LVCMOS25*,3,12,SLOW,,,,LOCATED,NO,NONE,
 P13,,,GND,,,,,,,,,,,,
 P14,,IOBS,IO_L44N_GCLK20_3,UNUSED,,3,,,,,,,,,
 P15,,IOBM,IO_L44P_GCLK21_3,UNUSED,,3,,,,,,,,,

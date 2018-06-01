@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            06/01/2018 - 20:38
+SOURCE          \\vmware-host\shared folders\WangRui\Programming\FPGA\pwm\0.mcs
+DEVICE          XCF04S
+DATA_WIDTH      8
+FILL_DATA       0xFF
+SIGNATURE       0x044E3D3E
+START_ADDRESS   0x00000000 END_ADDRESS 0x000421F5 DIRECTION_UP   "Z:/WangRui/Programming/FPGA/pwm/pwm.bit" 6slx9tqg144

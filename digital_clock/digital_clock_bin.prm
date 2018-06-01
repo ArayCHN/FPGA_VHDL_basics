@@ -3,7 +3,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 promgen -w -p mcs -c FF -o Z:\WangRui\Programming\FPGA\digital_clock//digital_clock_bin -x xcf04s -u 00000000 Z:/WangRui/Programming/FPGA/digital_clock/digital_clock.bit 
 
-PROM \\vmware-host\shared folders\WangRui\Programming\FPGA\digital_clock\digital_clock_bin.prm map: Thu May 31 16:20:55 2018
+PROM \\vmware-host\shared folders\WangRui\Programming\FPGA\digital_clock\digital_clock_bin.prm map: Fri Jun 01 17:02:21 2018
 
 Calculating PROM checksum with fill value ff
 
@@ -11,7 +11,7 @@ Format        Mcs86 (32-bit)
 Size          512K
 PROM start    0000:0000
 PROM end      0007:ffff
-PROM checksum 02d1c544
+PROM checksum 02d1e952
 
         Addr1        Addr2                     Date File(s)
-    0000:0000    0005:327b     May 31 16:18:45 2018 Z:/WangRui/Programming/FPGA/digital_clock/digital_clock.bit
+    0000:0000    0005:327b     Jun 01 17:01:18 2018 Z:/WangRui/Programming/FPGA/digital_clock/digital_clock.bit

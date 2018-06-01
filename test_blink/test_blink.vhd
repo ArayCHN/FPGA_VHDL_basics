@@ -36,23 +36,24 @@ entity blink_in_order is
     reset: in std_logic;
 	 clk: in std_logic;
 	 output_led: out std_logic := '0'; -- there can not be a semicolon here!!!
-	 output_clock_1hz: out std_logic --debug
+	 -- output_clock_1hz: out std_logic; --debug
   );
 end blink_in_order;
 
-architecture rtl of blink_in_order is
+architecture behavioral of blink_in_order is
   signal counter: natural range 0 to 8 := 0; -- 9 LEDs in total
   signal clk_1Hz: std_logic:= '0';
   signal led_state: std_logic := '0';
   constant clk_frequency : natural := 2;
   signal clk_count: natural:= 0;
+  
 begin
 
   clk_1_hz_generator: process(clk) is -- create 1 Hz clock
     -- constant clk_frequency : natural := 20000000;
 	 -- signal count: natural; -- the counter for clock prescale
   begin
-    if reset = '1' then
+    if reset = '0' then
 	   clk_count <= 0;
 		clk_1Hz <= '0';
 	 else
@@ -67,11 +68,11 @@ begin
 	 end if;
   end process clk_1_hz_generator;
   
-  output_clock_1hz <= clk_1Hz; -- debug, show in simulator
+  --output_clock_1hz <= clk_1Hz; -- debug, show in simulator
   
   LED_blink: process(clk_1Hz) is
   begin
-    if reset = '1' then
+    if reset = '0' then
 	   led_state <= '0';
 	 else
       if (clk_1Hz'event and clk_1Hz = '1') then -- reached rising edge of 1Hz clock
@@ -80,4 +81,4 @@ begin
 	 end if;
 	 output_led <= led_state; --led_state;
   end process LED_blink;
-end rtl;
+end behavioral;
